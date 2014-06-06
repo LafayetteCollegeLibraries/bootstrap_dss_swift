@@ -1,0 +1,4084 @@
+/**
+ * @author goodnowt@lafayette.edu
+ *
+ */
+  
+/* set color for background, minimum width, and text alignment for all pages*/
+
+body {
+	
+    background-color:#FAF0D7;
+}
+
+/**
+ * @author griffinj@lafayette.edu
+ *
+ */
+#block-menu-menu-authentication-cas .menu {
+
+    margin-bottom: 0px;
+}
+
+#block-menu-menu-authentication-cas .menu li {
+http://digital.stage.lafayette.edu/collections/eastasia
+    width: auto;
+    border-right: none;
+}
+
+#block-menu-menu-authentication-cas .menu .first a {
+
+    color: #1A98DB;
+}
+
+#block-menu-menu-authentication-cas .menu .first a:hover {
+
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* style log out hyperlink */
+
+.navbar-inner a {
+	
+	color:#DDDDDD;
+}
+
+.navbar-inner a:hover{
+	
+	text-decoration:none;
+	color:#DDDDDD;
+}
+
+/* style breadcrumbs, contact, and copyright */
+
+.breadcrumb {
+
+	background-image:linear-gradient(to bottom, #545454, #333333);
+	border-radius:1px;
+	border:none;
+	text-shadow:none;
+	padding-top:5px;
+	padding-bottom:5px;
+	line-height:normal;
+}
+
+.breadcrumb > li {
+	
+	line-height:normal;
+}
+
+.breadcrumb a {
+
+	color:#DDDDDD;
+	text-shadow:none;
+}
+
+.breadcrumb a:hover {
+	
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+
+.breadcrumb a:focus {
+
+	color:#DDDDDD;
+	text-shadow:none;
+}
+
+#breadcrumb-container {
+	
+	font-size:0px;
+}
+
+ul.breadcrumb {
+	
+	padding-left:15px;
+	padding-right:15px;
+	max-width:calc(100% - 30px);
+	width:auto;
+	font-size:14px;
+}
+
+#page-site-links-container {
+	
+	width:auto;
+	font-size:14px;
+}
+
+#contact-container {
+	
+	width:74px;
+}
+
+#copyright-container {
+	
+	width:106px;
+}
+
+/* style contact link */
+
+#contact-container {
+	
+	margin-right:1px;
+	max-width:auto;
+}
+
+/* style copyright link */
+
+#copyright-container{
+	
+	max-width:auto;
+}
+
+/* style footer */
+
+#block-menu-menu-footer-menu {
+	
+	border:none;
+	width:100%;
+	background-image: linear-gradient(to bottom, #545454, #333333);
+}
+
+.footer.container {
+	
+	width:100%;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+/* center text in footer */
+
+html.js body#thmr_undefined.html footer.footer div.region section#block-menu-menu-footer-menu.block ul.menu {
+	
+	margin-left:0px;
+}
+
+/* set color of footer hyperlinks */
+
+#block-menu-menu-footer-menu a {
+	
+	color:#DDDDDD;
+}
+
+/* set color of menu item borders in footer */
+
+.footer-menu-item {
+	
+	border-color:#DDDDDD;
+}
+
+/* get rid of margin to left of link list in footer */
+
+html.js body.html footer.footer div.region section#block-menu-menu-footer-menu.block ul.menu {
+	
+	margin-left:0px;
+}
+
+/* style hover effect for links in footer */
+
+.footer-menu-item {
+	
+	padding-left:0px;
+	padding-right:0px;
+	margin-left:-4px;
+}
+
+#block-menu-menu-footer-menu a {
+	
+	padding-left:24px;
+	padding-right:24px;
+}
+
+#block-menu-menu-footer-menu a:hover, #block-menu-menu-footer-menu a:focus {
+	
+	background-color:#DDDDDD;
+	color:#545454;
+}
+
+/* style blog RSS and contact blocks */
+
+.main-container section.block-aggregator, .main-container section.block-nodeblock {
+	
+	background-color:#F5F5F5;
+	border-radius:2px;
+	width:44%;
+	margin-bottom: 10px;
+	padding:1%;
+	margin-left:1%;
+	margin-right:1%;
+	border:1px solid;
+	border-color:#AAAAAA;
+}
+
+#block-aggregator-feed-2 {
+	
+	margin-right:0px;
+}
+
+#block-nodeblock-7 {
+	
+	margin-left:0px;
+}
+
+/* placement of blog RSS block */
+
+html.js body.html div.main-container div.row-fluid section.span12 section#block-aggregator-feed-2.block {
+	
+	float: left;
+}
+
+/* placement of contact block */
+
+html.js body.html div.main-container div.row-fluid section.span12 section#block-nodeblock-7.block{
+	
+	float:right;
+}
+
+/* reset margins above and to left of DSS logo in navbar */
+
+.navbar .logo {
+	
+	margin-top:2px;
+	margin-left:0%;
+	margin-right:65px;
+}
+
+/* style LC log-in logo and link */
+
+#shib_login_url {
+	
+    margin-top: 1px;
+}
+
+.hybridauth-icon-hybridauth-32-lafayette {
+
+    margin-left: 2px;
+}
+
+#shib_login_url a {
+
+    margin-left: 2px;
+    font-weight: inherit;
+}
+
+/* set top margin of nav icons */
+
+div.modal-container.container {
+
+    margin-top: 3px;
+}
+
+/* fix width and top margin of menu nav icon */
+
+#menu-toggle-icon {
+    margin-top: 3px;
+    width: inherit;
+}
+
+/* set font-color of log out text */
+
+html.js body#thmr_undefined.html header#navbar.navbar div.navbar-inner div.menu-toggle-container div.auth-share-container div.auth-container div#auth-control-container.modal-control-container div.auth-link a {
+	
+    color:#DDDDDD;
+}
+
+/* style title at top of pages */
+
+.lead {
+	
+	font-size:40px;
+	line-height:42px; 
+}
+
+/* suppress extra title on large sub-collection pages */
+
+html.js body.html div.main-container div.row-fluid section.span12 section#block-quicktabs-east-asia-image-collections.block h2.block-title {
+	
+	display:none;
+}
+
+html.js body.html div.main-container div.row-fluid section.span12 section#block-quicktabs-marquis-de-lafayette-prints-coll.block h2.block-title {
+	
+	display:none;
+}
+
+html.js body.html div.main-container div.row-fluid section.span12 article#node-19.node div.field div.field-items div.field-item h2 {
+	
+	display:none;
+}
+
+html.js body.html div.main-container div.row-fluid section.span12 article#node-21.node div.field div.field-items div.field-item h2{
+	
+	display:none;
+}
+
+html.js body.html div.main-container div.row-fluid section.span12 article#node-20.node div.field div.field-items div.field-item h2{
+	
+	display:none;
+}
+
+/* style projects grid */
+
+.project-grid-item {
+	
+	background-color:#F5F5F5;
+	padding:10px;
+	margin-bottom:20px;
+	border:1px solid;
+	border-color:#AAAAAA;
+	border-radius:2px;
+	float:left;
+	width:188px;
+	margin-left:1%;
+	margin-right:1%;
+	height:250px;
+}
+
+.project-grid-item > p {
+	
+	text-align:center;
+}
+
+/* style people divs */
+
+.contact-profile {
+	
+	background-color:#F5F5F5;
+	padding:10px;
+	margin-bottom:20px;
+	border:1px solid;
+	border-color:#AAAAAA;
+	border-radius:2px;
+	width:425px;
+	height:215px;
+	clear:none;
+	float:left;
+	margin-left:1%;
+}
+
+/* dummy */
+
+.contact-profile > p, .contact-profile > h4, .contact-profile > h5 {
+	
+	text-align:left;
+	float:right;
+	width:265px;
+}
+
+.contact-profile > p {
+	
+	margin-bottom:10px;
+}
+
+.contact-profile > h4 {
+	
+	margin:5px 0px;
+}
+
+.contact-profile > h5 {
+	
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+.contact-profile > img {
+	
+	width:140px;
+	height:191px;
+	float:left; 
+	margin-bottom:10px;
+	margin-left:5px;  
+	margin-right:15px;
+	margin-top:5px;
+}
+
+#postdoc > img {
+	
+	width:133px;
+	height:182px;
+	border:1px solid #CCCCCC;
+}
+
+/* carousel caption styling */
+
+.carousel-caption {
+	
+	padding-top:0px;
+	padding-bottom:3px;
+}
+
+.carousel-caption-heading {
+	
+	margin-top:5px;
+	font-size: 20px;
+}
+
+.carousel-caption-heading > a {
+	
+	color:#DDDDDD;
+}
+
+.carousel-caption-text {
+	
+	margin-top:2px;
+}
+
+.carousel-caption-text > a {
+	
+	color:#DDDDDD;
+}
+
+/* style carousel small nav buttons */
+
+.carousel-indicators {
+	
+	top:auto;
+	bottom:4%;
+	right:1%;
+	padding:2px;
+}
+
+.carousel-indicators:hover {
+	
+	cursor:pointer;
+}
+
+/* style carousel nav icons */
+
+.carousel-control {
+	
+	height:40px;
+	position:absolute;
+	width:auto;
+	left:0px;
+	border-radius:0px;
+	border:none;
+	top:33%;
+	
+}
+
+.carousel-control:focus {
+	
+	opacity:.35;
+}
+
+.carousel-control:hover {
+	
+	opacity:0.75;
+}
+
+.carousel-control.right {
+	
+	right:0px;
+}
+
+.carousel-control > img {
+	
+	height:100%;
+}
+
+.carousel-control.left > img {
+	
+	float:left;
+}
+
+.carousel-control.right > img {
+	
+	float:right;
+}
+
+/* ensure width of carousel images */
+
+.carousel-inner > .item > img {
+	
+	width:100%;
+}
+
+/* style search window */
+
+.block-islandora-solr {
+    width: 100%;
+}
+
+/* style search radio buttons */
+
+form#islandora-dss-solr-advanced-search-form div div#islandora-solr-advanced-scoping {
+	
+	float:left;
+	padding-bottom:20px;
+}
+
+/* style dropdown for collection radio selection */
+
+/**
+ * Disabled by griffinj in response to issue DSSSM-617
+ *
+ */
+/*
+form#islandora-dss-solr-advanced-search-form div div.control-group.form-type-select.form-item-collection.form-item {
+	
+	float:right;
+	padding-right:144px;
+	padding-top:46px;
+}
+*/
+
+/* set width of search selection fields */
+
+#edit-collection {
+	
+	width:344px;
+}
+
+div.controls {
+	
+	width:220px;
+}
+
+form#islandora-dss-solr-advanced-search-form div div#islandora-solr-advanced-terms div div.control-group {
+
+    width: 220px;
+}
+
+.form-text.required.error.form-autocomplete, .text-full.form-text.required.error {
+	
+	width:auto !important;
+}
+
+/* style add search field button */
+
+form#islandora-dss-solr-advanced-search-form div div#islandora-solr-advanced-terms button.islandora-solr-search-add {
+	
+	margin-right:11px;
+	background:#F5F5F5;
+	background-image:url("../files/PlusIcon.png");
+	background-position:center;
+	border:1px solid #AAAAAA;
+	border-radius:2px;
+	box-shadow:none;
+}
+
+/* style remove search field button */	
+
+.islandora-solr-search-remove {
+	
+	background:#F5F5F5;
+	background-image:url("../files/MinusIcon.png");
+	background-position:center;
+	border:1px solid #AAAAAA;
+	border-radius:2px;
+	box-shadow:none;
+}
+
+.islandora-solr-search-remove:hover, .islandora-solr-search-remove:focus {
+	
+	background:#F5F5F5;
+	background-image:url("../files/MinusIcon.png");
+	background-position:center;
+	opacity:1;
+}
+
+/* style search return button */
+
+#edit-submit--3 {
+	
+	float:left;
+	background:#F5F5F5;
+	color:#404040;
+	border:1px solid #AAAAAA;
+	border-radius:2px;
+	text-shadow:none;
+	width:80px;
+	box-shadow:none;
+}
+
+/* add margin-below Boolean operands */
+
+.form-item-terms-0-boolean {
+	
+	margin-bottom:5px;
+}
+
+/* style search tooltip button */
+
+#search-modal-help {
+	
+	float:right;
+	margin-right:11px;
+	margin-top:16px;
+	background:#F5F5F5;
+	background-image: url("../files/TooltipIcon.png");
+	background-position: center;
+	border:1px solid #AAAAAA;
+	border-radius:2px;
+	box-shadow:none;
+}
+
+/* style LC icon in log in */
+
+.hybridauth-icon-hybridauth-32-lafayette {
+    background-image: url("../files/LCIconForWindow.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    opacity: 1;
+    border-radius: 3px;
+}
+
+/* style Facebook icon in log in */
+
+.hybridauth-facebook-hybridauth-32 {
+	
+	background-image: url("../files/facebook.png");
+}
+
+/* style Twitter icon in log in */
+
+.hybridauth-twitter-hybridauth-32 {
+	
+	background: url("../files/twitter.png");
+}
+
+/* reset icon opacity in log in */
+
+.hybridauth-icon-hybridauth-32 {
+
+    opacity: 1;
+}
+
+.hybridauth-icon-hybridauth-32:hover {
+	
+	opacity:.75;
+}
+
+/* style tooltip button in share window */
+
+#share-modal-help {
+	
+	background: none repeat scroll 0 0 #F5F5F5;
+	background-image: url("../files/TooltipIcon.png");
+	background-position: center;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    box-shadow: none;
+    width:40px;
+}
+
+/* style tooltip button in log in window */
+
+#auth-modal-help {
+	
+	background: none repeat scroll 0 0 #F5F5F5;
+	background-image: url("../files/TooltipIcon.png");
+	background-position: center;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    box-shadow: none;
+    width:40px;
+}
+
+/* style Facebook icon in share */
+
+html.js body.html header#navbar.navbar div#share-modal.lafayette-dss-modal div.modal-dialog div.modal-content div.modal-body section#block-sharethis-sharethis-block.block div.sharethis-wrapper span.st_facebook_large span.stButton span.stLarge{
+	
+	background-image: url("../files/facebook.png") !important;
+}
+
+/* style Twitter icon in share */
+
+html.js body.html header#navbar.navbar div#share-modal.lafayette-dss-modal div.modal-dialog div.modal-content div.modal-body section#block-sharethis-sharethis-block.block div.sharethis-wrapper span.st_twitter_large span.stButton span.stLarge{
+	
+	background-image: url("../files/twitter.png") !important;
+}
+
+/* style all icons in share */
+
+.sharethis-wrapper > span {
+    
+    height:32px;
+    margin-bottom:2px;
+}
+
+/* style links to people profiles */
+
+.profile-button {
+	
+	background:#DDDDDD;
+	border-radius:2px;
+	border:1px solid;
+	border-color:#AAAAAA;
+	padding:6px;
+	margin-left:5px;
+	display:none;
+}
+
+/* style browsing tabs for larger collections */
+
+ul.quicktabs-tabs {
+	
+	margin-left:1%;
+}
+
+ul.quicktabs-tabs > li {
+	
+	border-right:1px solid #545454;
+	padding:5px 8px;
+	float:left;
+}
+
+ul.quicktabs-tabs > li.first {
+	
+	border-left:1px solid #545454;
+}
+
+ul.quicktabs-tabs > li:hover {
+	
+	background:#DDDDDD;
+	text-decoration:underline;
+	color:#005580;
+}
+
+ul.quicktabs-tabs > li:hover > a {
+	
+	color:inherit;
+}
+
+ul.quicktabs-tabs > li > a:focus {
+	
+	color:#1A98DB;
+	text-decoration:none;
+}
+
+ul.quicktabs-tabs > li.active {
+	
+	background:#EEEEEE;
+}
+
+/* style EAIC sub collection divs */
+
+.east-asia-sub-collection {
+	
+	background:#F5F5F5;
+	border:1px solid #AAAAAA;
+	border-radius:2px;
+	margin:10px;
+	clear:both;
+	margin-left:0px;
+	min-height:240px;
+	margin-right:0px;
+	overflow:auto;
+}
+
+.east-asia-sub-collection > a > img {
+	
+	margin:10px;
+}
+
+/* style Lafayette prints sub collection divs */
+
+.lafayette-prints-subcollection {
+	
+	background:#F5F5F5;
+	border:1px solid #AAAAAA;
+	border-radius:2px;
+	margin:10px;
+	clear:both;
+	margin-left:0px;
+	min-height:240px;
+	margin-right:0px;
+	overflow:auto;	
+}
+
+.lafayette-prints-subcollection > a > img {
+	
+	margin:10px;
+}
+
+/* prevent subcollection and series text for EAIC and MDLP to wrap beneath thumbnails */
+
+.lafayette-prints-subcollection > a > img {
+	
+	float:none;
+}
+
+.lafayette-prints-subcollection-content {
+	
+	width:calc(100% - 250px);
+	float:right;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+.lafayette-prints-subcollection > h2 {
+	
+	width:calc(100% - 250px);
+	float:right;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:0px;
+}
+
+.east-asia-sub-collection > a > img {
+	
+	float:none;
+}
+
+.east-asia-sub-collection-content {
+	
+	width:calc(100% - 250px);
+	float:right;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+.east-asia-sub-collection > h2 {
+	
+	width:calc(100% - 250px);
+	float:right;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:0px;
+}
+
+/* style margins around nodes */
+
+.node {
+	
+	padding:0px;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+/* style margin on projects */
+
+#node-12 {
+	
+	margin:0px;
+}
+
+/* style contact form height and submit button */
+
+.modal-contact-body {
+	
+	height:450px;
+	max-height:none;
+}
+
+#edit-submit--4, #edit-submit--5 {
+	
+	background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #404040;
+    float: left;
+    text-shadow: none;
+    width: 80px;
+}
+
+#webform-component-message {
+	
+	margin-bottom:5px;
+}
+
+html.js body.html div.main-container div.row-fluid section.span12 article#node-29.node div.field div.field-items div.field-item div {
+	
+	background-color: #F5F5F5;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    padding: 10px;
+    float: right;
+    text-align: center;
+}
+
+html.js body.html div.main-container div.row-fluid section.span12 article#node-29.node div.field div.field-items div.field-item div ul {
+	
+	list-style:none;
+	margin:0px;
+}
+
+html.js body.html div.main-container div.row-fluid section.span12 article#node-29.node div.field div.field-items div.field-item div h6 {
+	
+	margin-top:0px;
+	margin-bottom:5px;
+}
+
+/* style list view search results */
+
+.islandora-solr-search-results {
+	
+	margin-left:2%;
+	margin-right:1%;
+} 
+
+.islandora-solr-search-result {
+	
+	background:#F5F5F5;
+	border:1px solid #AAAAAA;
+	border-radius:2px;
+	padding:10px;
+}
+
+.solr-fields {
+	
+	border: 1px solid #AAAAAA !important;
+	background-color:#FFFFFF;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.solr-thumb {
+	
+	width:26% !important;
+}
+
+dd.solr-value {
+	
+	padding-left:1%;
+}
+
+.solr-fields dt {
+	
+	word-wrap:break-word;
+	width:33%;
+}
+
+.solr-fields dd {
+	
+	word-wrap:break-word;
+	width:67%;
+}
+
+/**
+ * @author griffinj@lafayette.edu
+ *
+ */
+
+.islandora-solr-search-result {
+
+    display: list-item;
+}
+
+.islandora-discovery-control {
+
+    display: inline-block;
+}
+
+/* reset padding of search results page */
+
+.islandora-solr-content {
+	
+	padding:0px;
+}
+
+/* style top area of both search results views */
+
+.title-sort-control {
+	
+	float:left;
+	clear:left;
+	width: 50%;
+}
+
+.field-sort, .field-sort:focus {
+	
+	background-color:#F5F5F5;
+	border-radius:2px;
+	border: 1px solid #AAAAAA;
+	margin-left: 7px;
+    padding: 2px 12px 4px 12px;
+    color: #1A98DB;
+    text-decoration:none;
+}
+
+.field-sort.active {
+	
+	background-color: #DDDDDD;
+    box-shadow: 0 0 5px 1px #EAEAEA inset;
+}
+
+.title-sort-control > span {
+	
+	float:left;
+	margin-bottom: 5px;
+    margin-top: 0px;
+    margin-right:6px;
+}
+
+.title-sort-control select {
+	
+	float:left;
+	clear:left;
+	margin-top: 3px;
+}
+
+.islandora-basic-collection-display-switch > ul > li {
+	
+	width:40px;
+	background-color:#F5F5F5;
+	text-align:center;
+	padding:1px 3px 3px;
+	border:1px solid #AAAAAA;
+	border-radius:2px;
+}
+
+.islandora-basic-collection-display-switch > ul > li > a:focus {
+	
+	text-decoration:none;
+	color:#1A98DB;
+}
+
+.islandora-discovery-controls {
+	
+	margin-left:1%;
+	margin-right:1%;
+}
+
+/**
+ * @author griffinj@lafayette.edu
+ *
+ */
+.islandora-solr-search-alert {
+
+    /* width:40px; */
+    background-color:#F5F5F5;
+    text-align:center;
+    padding:1px 3px 3px;
+    border:1px solid #AAAAAA;
+    border-radius:2px;
+    width: 100%;
+
+    clear: both;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;    
+}
+
+/* style grid view search results */
+
+.islandora img {
+	
+	max-width:100%;
+	border:1px solid #DDDDDD;
+	border-radius:3px !important;
+}
+
+.islandora-basic-collection-grid {
+	
+	font-size:0px;
+	background-color:#F5F5F5;
+	border-radius:2px;
+	border: 1px solid #AAAAAA;
+}
+
+.islandora-solr-search-results {
+	
+	clear:both;
+}
+
+.islandora-basic-collection-grid dl {
+	
+	font-size:14px;
+	margin:1%;
+	width:23%;
+	text-align:center;
+	vertical-align:top;
+}
+
+.islandora-basic-collection-grid dd {
+	
+	margin-top:3px;
+}
+
+/* style collapsing menu */
+
+div.nav-collapse.in nav ul li {
+	
+	border-bottom:1px solid #DDDDDD;
+	margin-top:0px;
+}
+
+div.nav-collapse.in nav ul li a {
+	
+	border-radius:0px;
+	margin-bottom:0px;
+}
+
+div.nav-collapse.in nav ul li.first {
+	
+	border-top:1px solid #DDDDDD;
+}
+
+div.nav-collapse.in nav ul li.last {
+	
+	border-bottom:none;
+}
+
+div.nav-collapse.in nav ul {
+	
+	margin-bottom:0px;
+}
+
+/* set z-index of search refinement hidden div */
+
+.snap-drawer-left {
+	
+	z-index:-1;
+}
+
+/* style image viewer */
+
+#book-page-viewer {
+	
+	margin-left:1%;
+	margin-right:1%;
+}
+
+body > div#islandora-openseadragon {
+	
+	padding-left:0px;
+	padding-right:0px;
+}
+
+/* style image viewer controls */
+
+.openseadragon-controls-navigator > fieldgroup > button {
+	
+	background-color:#EEEEEE !important;
+	border:1px solid #AAAAAA !important;
+	border-radius:2px;
+	margin-top:2px !important;
+	margin-right:4px !important;
+	margin-bottom:5px !important;
+	margin-left:0px !important;
+}
+
+#openseadragon-size-transform-container > span > fieldgroup > button > img {
+	
+	opacity:1 !important;
+}
+
+body > div#islandora-openseadragon > form > #openseadragon-size-transform-container {
+	
+	margin-top:5px !important;
+	margin-left:5px !important;
+}
+
+.openseadragon-controls-container {
+	
+	margin-right:1%;
+}
+
+/* ensure equal spacing and proper alignment among icons/links in authentication window */
+
+.hybridauth-widget-wrapper > h3 {
+    
+    display:none;
+}
+
+#block-hybridauth-hybridauth {
+	
+	margin-top:1px;
+	margin-left:1px;
+}
+
+/* style search refinement panel */
+
+.islandora-solr-facet {
+	
+	font-size: 15px;
+    font-weight: bold;
+}
+
+.islandora-solr-facet-list {
+	
+	word-wrap:break-word;
+}
+
+.islandora-solr-facet {
+	
+	word-wrap:break-word;
+}
+
+/* get rid of styling on div surrounding each projects tab "page" within projects page */
+
+#block-nodeblock-12 {
+	
+	background: none;
+    border: none;
+    clear: both;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+#block-nodeblock-44 {
+	
+	background: none;
+    border: none;
+    clear: both;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+#node-44 {
+	
+	margin-left:0;
+	margin-right:0;
+}
+
+/* get rid of second instance of "projects" heading on projects page */
+
+#block-quicktabs-projects > h2 {
+	
+	display:none;
+}
+
+/* style sliders on refinement controls for search results */
+
+.islandora-solr-facet-date-init {
+	
+	float:left;
+	margin-left: 6%;
+    margin-top: 5px;
+    margin-bottom: 9px;
+}
+
+.islandora-solr-facet-date-term {
+	
+	float:right;
+	margin-right: 6%;
+    margin-top: 5px;
+}
+
+.islandora-solr-facet {
+	
+	clear:both;
+}
+
+.ui-slider .ui-slider-handle {
+	
+	width:9%;
+}
+
+.ui-slider-handle {
+	
+	background-color: #F5F5F5 !important;
+    background-image: none !important;
+    border-color: #AAAAAA !important;
+}
+
+.ui-slider-handle {
+	
+	border-radius:2px !important;
+}
+
+.ui-slider-handle:hover {
+	
+	cursor:pointer;
+}
+
+
+.ui-slider-range {
+	
+	background-color:#DDDDDD !important;
+}
+
+.ui-slider-horizontal .ui-slider-left {
+	
+	margin-left:-9%;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.ui-slider-horizontal .ui-slider-right {
+	
+	margin-left:0px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.islandora-solr-facet-date-slider {
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/* style facet removal controls */
+
+.islandora-solr-facet-token-list {
+	
+	list-style:none;
+	margin-top:12px;
+	margin-left:0px;
+}
+
+.islandora-solr-facet-token {
+	
+	background-color:#F5F5F5;
+	-moz-box-sizing:content-box;
+	padding: 1px 6px 3px 5px;
+	height:auto;
+	vertical-align:auto;
+}
+
+.islandora-solr-facet-token:hover {
+	
+	cursor:pointer;
+}
+
+.islandora-solr-facet-token > span.close {
+	
+	color: #7E7E7E;
+    opacity: 1;
+    float:right;
+    margin-top:-1px;
+    margin-right:0px;
+    margin-left:4px;
+}
+
+/* style show more lightbox from search refinement */
+
+.ui-widget-header {
+	
+	background:none;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	border-bottom:1px solid #EEEEEE;
+}
+
+.ui-corner-all {
+	
+	border-radius:0px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	
+	padding: 0.6em 1em;
+}
+
+.ui-dialog {
+	
+	padding:0px;
+}
+
+#edit-fields {
+	
+	border: 1px solid #CCCCCC;
+	padding:2px;
+	border-radius:2px;
+}
+
+#edit-submit {
+	
+	background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #404040;
+    text-shadow: none;
+    margin-top:8px;
+}
+
+/* style search refinement lightbox alert */
+
+.ui-dialog-buttonpane {
+	
+	border:none;
+	margin-top:0px;
+}
+
+.ui-dialog-buttonset > button {
+	
+	background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #404040;
+    text-shadow: none;
+    margin-top:8px;
+    padding:4px 12px;
+}
+
+/* set width of refinement panel and page content when refinement panel is displayed on search results */
+
+.snap-drawers.snap-expand-left {
+	
+    width: 24%;
+    border-bottom: 1px solid #CCCCCC;
+    border-radius: 2px;
+    border-right: 1px solid #CCCCCC;
+    padding-right: 1%;
+}
+
+.main-container.snap-expand-left {
+	
+    width: 74%;
+}
+
+/* style metadata on multiple-image object level pages */
+
+.islandora-book-fields > dt {
+	
+	width: 30%;
+    word-wrap: break-word;
+    float:left;
+    clear:both;
+    padding-left:1%;
+    padding-right:1%;
+    -moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	border-right: 1px solid #CCCCCC;
+	margin-right: -1px;
+}
+
+.islandora-inline-metadata-displayed {
+	
+	border-top:1px solid #CCCCCC;
+}
+
+.islandora-book-fields > dd {
+	
+	width: 70%;
+    word-wrap: break-word;
+    float:left;
+    border-top:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+    padding-left:1%;
+    padding-right:1%;
+    -moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.islandora-book-fields > dt.first {
+	
+	border-top:none;
+}
+
+.islandora-book-fields > dd.first {
+	
+	border-top:none;
+}
+
+.islandora-book-metadata {
+	
+    display: block;
+    margin: 30px auto 10px;
+    width: 80%;
+}
+
+.islandora-book-metadata > legend {
+	
+	display:none;
+}
+
+/* ensure display of metadata on pdf and single-image object level pages */
+
+html.js fieldset.collapsed .fieldset-wrapper {
+	
+	display:block;
+}
+
+html.js fieldset.collapsed {
+	
+	height:auto;
+}
+
+/* style metadata on single-image object level pages */
+
+.islandora-large-image-metadata > legend {
+	
+	display:none;
+}
+
+.islandora-large-image-metadata {
+	
+	display: block;
+    margin: 30px auto 10px;
+    width: 80%;
+}
+
+.islandora-inline-metadata > dt {
+	
+	width: 30%;
+    word-wrap: break-word;
+    float:left;
+    clear:both;
+    padding-left:1%;
+    padding-right:1%;
+    -moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	border-right: 1px solid #CCCCCC;
+	margin-right: -1px;
+	text-align:left;
+}
+
+.islandora-inline-metadata-displayed {
+	
+	border-top:1px solid #CCCCCC;
+}
+
+.islandora-inline-metadata > dd {
+	
+	width: 70%;
+    word-wrap: break-word;
+    float:left;
+    border-top:1px solid #CCCCCC;
+    border-left:1px solid #CCCCCC;
+    padding-left:1%;
+    padding-right:1%;
+    -moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/* style metadata for PDF object level pages */
+
+.islandora-pdf-metadata > legend {
+	
+	display:none;
+}
+
+.islandora-pdf-metadata {
+	
+	display: block;
+    margin: 30px auto 10px;
+    width: 80%;
+}
+
+/* ensure pdf viewer background texture is not applied to entire page */
+
+body {
+	
+	background-image:none;
+}
+
+/* style no search results message */
+
+.no-results {
+	
+	font-size:20px;
+	padding-top:10px;
+	margin-bottom:9px;
+}
+
+/* reset opacity of close links in navbar widgets */
+
+.close {
+	
+	opacity:0.3;
+}
+
+/* style close text for refine lightbox and alert */
+
+.ui-dialog .ui-dialog-titlebar-close {
+	
+	font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color:#000000;
+    opacity:0.3;
+    margin-top:-11px;
+    margin-right:5px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding:0px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover {
+	
+	opacity:0.4;
+	background:none;
+	border:0px;
+	text-decoration:none;
+	text-shadow:none;
+}
+
+/* style div around browse links on collection pages */
+
+.browse-block {
+	
+	background-color: #F5F5F5;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    margin-left:10px;
+    padding-bottom:0px;
+}
+
+.browse-block > ul {
+	
+	margin:0px;
+	list-style:none;
+}
+
+.browse-block > p {
+	
+	text-decoration:underline;
+	text-align:center;
+}
+
+.browse-block > div > p {
+	
+	text-align:center;
+	margin-top:10px;
+}
+
+.browse-block > div > p > img {
+	
+	vertical-align:bottom;
+}
+
+.browse-block.east-asia {
+	
+    width:224px;
+    height:160px;
+    margin-bottom:8px;
+}
+
+.browse-block.geology {
+	
+	width:208px;
+	height:160px;
+}
+
+.browse-block.geology > div > p > img {
+	
+	margin-right:1px;
+}
+
+.browse-block.visual {
+	
+	width:165px;
+	height:115px;
+}
+
+.browse-block.historical {
+	
+	width:208px;
+	height:140px;
+}
+
+.browse-block.wwii {
+	
+	width:208px;
+	height:140px;
+}
+
+.browse-block.newspaper {
+	
+	width:208px;
+	height:100px;
+}
+
+.browse-block.mdlp {
+	
+	width:165px;
+	height:140px;
+	margin-bottom:8px;
+}
+
+.browse-block.mckelvy {
+	
+	width:208px;
+	height:120px;
+}
+
+/* make styling on single-page item viewer match multi-page item viewer */
+
+body.no-sidebars .islandora-large-image-content {
+	
+	float:none;
+	width:auto;
+}
+
+.islandora-large-image-content {
+	
+	background-color:none;
+	border:none;
+	border-radius:0px;
+	padding:0px;
+}
+
+.islandora-large-image-content-wrapper {
+	
+	margin-left:1%;
+	margin-right:1%;
+}
+
+/* set margins on multi-page item viewer */
+
+#book-viewer {
+	
+	margin-left:1%;
+	margin-right:1%;
+}
+
+/* styling for PDF viewer */
+
+.islandora-pdf-content-wrapper {
+	
+	margin-left:1%;
+	margin-right:1%;
+}
+
+/* implement styling to center contact div on pages */
+
+
+#contact {
+	
+	background:none;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    outline: none;
+    z-index:100 !important;
+    margin-left:calc((100% - 502px) / 2);
+    width:502px;
+    height:auto;
+}
+
+#contact > div.modal-dialog {
+	
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.5);
+    width:500px;
+    margin-top:35px;
+}
+
+#contact > div.modal-dialog > div.modal-content {
+	
+	height:550px;
+}
+
+.modal-contact-body {
+	
+	height:456px;
+}
+
+/* style contact form labels */
+
+#webform-component-your-name > label {
+	
+	width:82px;
+}
+
+#webform-component-your-e-mail-address > label {
+	
+	width:140px;
+}
+
+#webform-component-subject > label {
+	
+	width:60px;
+}
+
+#webform-component-message > label {
+	
+	width:68px;
+}
+
+/* style contact page for smartphone users */
+
+.span12 > #node-9 > div {
+	
+	font-size:16px;
+}
+
+.span12 > #node-9 > form > div > div > div > textarea {
+	
+	height:150px;
+}
+
+.span12 > #node-9 > form > div > div > label {
+	
+	font-weight:bold;
+}
+
+.span12 > #node-9 > form > div > div#webform-component-your-name > label {
+	
+	width:85px;
+}
+
+.span12 > #node-9 > form > div > div#webform-component-your-e-mail-address > label {
+	
+	width:150px;
+}
+
+.span12 > #node-9 > form > div > div#webform-component-subject > label {
+	
+	width:65px;
+}
+
+.span12 > #node-9 > form > div > div#webform-component-message > label {
+	
+	width:75px;
+}
+
+/* style pdf viewer */
+
+.toolbarField:hover, .toolbarField:focus {
+	
+	background-color:#FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+.islandora-pdf-content {
+	
+	background-color:#F5F5F5;
+}
+
+.toolbar {
+	
+	margin-left: -1px;
+    margin-right: -1px;
+    margin-top: -1px;
+}
+
+#toolbarContainer, .findbar {
+	
+	background-image: linear-gradient(to bottom, #545454, #333333);
+}
+
+.secondaryToolbar {
+	
+	background-color:#333333;
+	background-image:none;
+}
+
+/* style multi-page image viewer thumbnail navigation controls */ 
+
+.referencestrip {
+	
+	margin-left:0px !important;
+	background-color:#F5F5F5 !important;
+	width:174px !important;
+	opacity:1 !important;
+	height:auto !important;
+	border:1px solid #CCCCCC !important;
+	border-radius:2px !important;
+}
+
+.referencestrip > div > form > textarea {
+	
+	display:none;
+}
+
+.referencestrip > div {
+	
+	width:174px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+
+.referencestrip-unselected > form > div > canvas {
+	
+	background-color:#F5F5F5 !important;
+}
+
+.referencestrip-unselected {
+	
+	background-color:#F5F5F5 !important;
+}
+
+.referencestrip-selected {
+	
+	padding-top:4px !important;
+	padding-bottom:4px !important;
+	background-color:#E9E9E9 !important;
+}
+
+.referencestrip-selected > form > div > canvas {
+	
+	background-color:#E9E9E9 !important;
+}
+
+/* suppress view of thumbnail navigation on single-page image objects */
+
+.islandora-large-image-content > div > form > div > span > div.referencestrip {
+	
+	display:none !important;
+}
+
+.islandora-large-image-content > div > form > div > span.referencestrip-container {
+	
+	display:none !important;	
+}
+
+/* justified text across entire site (where necessary) */
+
+p {
+	
+	text-align:justify;
+}
+
+/* style navigator on image viewer */
+
+.navigator {
+	
+	border: 1px solid #555555 !important;
+}
+
+.displayregion {
+	
+	border: 1px solid #990000 !important;
+}
+
+/* underline item detail heading on item pages */
+
+.islandora-image-details {
+	
+	border-bottom: 1px solid #000000;
+    line-height: 24px;
+}
+
+/* fix text height issue for pdf viewer page number input and zoom dropdown selector */
+
+#pageNumber {
+	
+	padding:0px 2px;
+}
+
+#scaleSelect {
+	
+	line-height:20px;
+}
+
+/* add margin to left of download links div on metadb page */
+
+.download-block.metadb {
+	
+	margin-left:10px;
+}
+
+/* style pagination controls */
+
+.pagination {
+	
+	margin-bottom:0px;
+}
+
+.pagination ul > li > a, .pagination ul > li > span {
+	
+	padding:4px 10px;
+}
+
+.pagination > ul > li > a:hover {
+	
+	text-decoration:underline;
+}
+
+/* center title in contact block on home page */
+
+#block-nodeblock-7 > .block-title {
+	
+	text-align:center;
+}
+
+/* style search results authentication alert */
+
+.islandora-solr-search-alert {
+	
+	background:none;
+	border:none;
+	font-weight:bold;
+	font-size:18px;
+	margin-top:10px;
+}
+
+/* ensure font color in PDF viewer search box */
+
+#findInput, #findInput:hover, #findInput:focus {
+	
+	color:#000000;
+	background-color:#FFFFFF;
+} 
+
+/* reset background color for search hits in pdf viewer */
+
+.textLayer .highlight.selected {
+	
+	background-color:rgba(243, 243, 21, 0.5);
+}
+
+.textLayer .highlight {
+	
+	background-color:rgba(0, 118, 245, 0.3);
+}
+
+/* ensure pagination div is below other search control elements */
+
+.pagination-count {
+	
+	clear:both;
+}
+
+
+
+/* style pagination to indicate current page */
+
+/*
+ * disabled by Thom for ELC
+ */
+
+/*.pager-current > a {
+	
+	background-color:#E2E2E2 !important;
+	box-shadow: inset 0px 0px 5px 1px #EAEAEA;
+	-moz-box-shadow: inset 0px 0px 5px 1px #EAEAEA;
+	-webkit-box-shadow: inset 0px 0px 5px 1px #EAEAEA;
+}*/
+
+/* fix color of page heading on search results */
+
+.lead {
+	
+	color:#1A98DB;
+}
+
+/* reset carousel transition length */
+
+.carousel-inner > .item {
+	
+	transition:left 2s ease-in-out 0s;
+}
+
+/* set color of active dot on carousel */
+
+.carousel-indicators .active {
+	
+	background-color: #EEEEEE;
+}
+
+/* style services page */
+
+#digitizer {
+	
+	border-radius: 2px;
+    float: left;
+    height: 120px;
+    margin-right: 15px;
+    margin-top: 5px;
+    width: 120px;
+    margin-bottom:15px;
+}
+
+#node-3 > div > div > div > h1, #node-3 > div > div > div > h2, #node-3 > div > div > div > h3 {
+	
+	line-height:24px;
+}
+
+/* style navbar widget help popovers */
+
+.popover-content {
+	
+	text-align:justify;
+} 
+
+/* style CAS authentication alert */
+
+.alert-block {
+	
+	max-width:315px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+/* text-justification for page headings */
+
+#page-header > p {
+	
+	text-align:left;
+}
+
+/* styling results page for searching within site */
+
+.search-result > h3 {
+	
+	font-size:23px;
+	line-height:25px;
+	margin:0px;
+}
+
+.search-result > h3 > a {
+	
+	font-weight:normal;
+}
+
+.search-snippet-info {
+	
+	margin-top:4px;
+}
+
+.search-results.node-results {
+	
+	margin-left:1%;
+	margin-right:1%;
+	list-style:none;
+}
+
+/* styling for newspaper content dm access page */
+
+.section {
+	
+	width:250px;
+	float:right;
+	margin-left:15px;
+}
+
+#context-search-form {
+	
+	padding:10px;
+	margin:0px;
+}
+
+#context-search-form > h5, #context-search-form > h6,  #context-search-form > p {
+	
+	text-align:center;
+}
+
+/* style paragraphs on repositories page */
+
+#node-4 > div > div > div > p, #node-4 > div > div > div > ul {
+	
+	padding-left:40px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ * @author griffinj
+ * Resolving DSSSM-308
+ */
+
+body {
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+body > * {
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+
+
+
+
+/* printing style sheet */
+
+@media print {
+	
+	.navbar-inner {
+		
+		display:none;
+	}
+	
+	a:after {
+		
+		display:none;
+	}
+	
+	p.lead {
+		
+		text-align:left;
+	}
+	
+	.navigator {
+		
+		display:none !important;
+	}
+	
+	.openseadragon-controls-navigator {
+		
+		display:none !important;
+	}
+	
+	.referencestrip {
+		
+		display:none !important;
+	}
+	
+	.openseadragon-controls-container > canvas {
+		
+		max-height:100% !important;
+		height:auto !important;
+	}
+	
+	#book-viewer {
+		
+		height:280px;
+	}
+	
+	.islandora-large-image-content-wrapper {
+		
+		height:280px;
+	}
+	
+	.contact-profile {
+		
+		clear:both;
+		float:none;
+	}
+	
+	#john {
+		
+		page-break-after:always;
+	}
+	
+	#paul {
+		
+		page-break-after:always;
+	}
+	
+	#toolbar, .nav.nav-tabs, .alert.alert-block.alert-success {
+		
+		display:none;
+	}
+	
+	#page-header {
+		
+		text-align:left;
+	}
+	
+}
+
+
+
+
+/* by Thom: styling for all node backgrounds */
+
+article {
+	
+	background:#DBD2C1;
+}
+
+/* by Thom: get rid of border on top of footer section */
+
+.footer {
+	
+	border:none;
+}
+
+/* by Thom: style navbar submenus */
+
+.dropdown-menu:before, .dropdown-menu:after {
+	
+	border-bottom-color: #545454 !important;
+}
+
+.dropdown-menu {
+	
+	background-image: linear-gradient(to bottom, #545454, #333333);
+	text-shadow:none;
+	border:0px;
+	box-shadow:none;
+	padding:0px;
+	border-radius:2px;
+	box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.5);
+	text-align:left;
+}
+
+.dropdown-menu > li > a {
+	
+	color:#DDDDDD;
+	border-bottom: 1px solid #545454;
+}
+
+.dropdown-menu > li.last > a {
+
+	border-bottom: 0px;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	
+	color: #545454;
+	background-color: #DDDDDD;
+	background-image:none;
+}
+
+.dropdown-menu > li.first > a:hover, .dropdown-menu > li.first > a:focus {
+	
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+}
+
+.dropdown-menu > li.last > a:hover, .dropdown-menu > li.last > a:focus {
+	
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:2px;
+}
+
+/* by Thom: relationships on add person form */
+
+.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th {
+	
+	background:#f7eedd;
+}
+
+/* by Thom: buttons on add person */
+
+#edit-publish, .btn.btn-primary.form-submit.add-node-modal, .field-add-more-submit.btn.btn-info.form-submit.ajax-processed, .add-node-modal.btn.btn-info {
+	
+	background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #404040;
+    text-shadow: none;
+}
+
+.field-add-more-submit.btn.btn-info.form-submit.ajax-processed {
+	
+	background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #404040;
+    text-shadow: none;
+}
+
+#edit-publish {
+	
+	margin-top:8px;
+}
+
+/* by Thom: borders between divs on add person */
+
+.table th, .table td {
+	
+	border:0px;
+}
+
+/* by Thom: borders between divs on add item */
+
+#edit-actions {
+	
+	border:0px;
+}
+
+/* by Thom: hide unnecessary elements on add person */
+
+.field-multiple-drag {
+	
+	display:none;
+}
+
+.tabledrag-toggle-weight-wrapper {
+	
+	display:none;
+}
+
+/* by Thom: backgrounds on divs on add person */
+
+.human-row {
+	
+	background-color: #f7eedd;
+	border: 1px solid #d6cdbc;
+	overflow:auto;
+	padding:10px;
+	width:548px;
+	margin-left:calc((100% - 570px) / 2);
+}
+
+#human-node-form .field-label {
+	
+	background-color:#F7EEDD;
+}
+
+/* by Thom: position elements on add person */
+
+.draggable > td {
+	
+	padding:0px;
+}
+
+.form-type-radio.form-item-field-human-gender-und.form-item {
+	
+	float:left;
+	padding-right:10px;
+}
+
+.human-column, #edit-actions {
+	
+	width:auto;
+	float:left;
+	margin:auto 8px;
+}
+
+.human-column > div > div > label, .human-column > div > label, .field-human-pers-rels-fields > div > div > label {
+	
+	float:left;
+	width:125px;
+}
+
+.human-column > div > div > .controls, .human-column > div > .controls {
+	
+	float:left;
+} 
+
+.btn.btn-primary.form-submit.add-node-modal, #edit-field-human-pers-rels-und-add-more, .add-node-modal.btn.btn-info {
+	
+	margin-left:5px;
+}
+
+#edit-field-person-location-und, #edit-field-person-type-und {
+	
+	margin-bottom:0px;
+}
+
+#field-human-pers-rels-values > thead > tr > th {
+	
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.field-human-pers-rels-fields {
+	
+	padding-top:8px;
+}
+
+.human-column > div > div > div.clearfix > button {
+	
+	float:right;
+	font-size: x-large;
+    margin-top: -30px;
+    padding-bottom: 6px;
+    padding-top: 2px;
+}
+
+/* by Thom: headings on add forms */
+
+.loan-row .control-label, .human-row .control-label, .field-human-pers-rels-fields > div > div > label, .field-label > label, #field-bib-rel-object-values > thead > tr > th > label {
+	
+	font-weight:bold;
+}
+
+/* by Thom: backgrounds on divs on add item */
+
+.loan-row {
+	
+	background-color: #f7eedd;
+	border: 1px solid #d6cdbc;
+	overflow:auto;
+	padding:10px;
+	width:548px;
+	margin-left:calc((100% - 570px) / 2);
+}
+
+/* by Thom: position and size elements on add item */
+
+.book-column {
+	
+	width:auto;
+	clear:both;
+}
+
+.book-column.single-value-field.column-item-book-periodical {
+	
+	clear:none;
+}
+
+#edit-field-book-or-periodical-und.form-radios div.form-type-radio {
+	
+	width:auto;
+	padding-right:10px;
+}
+
+#edit-actions {
+	
+	padding:0px;
+	margin:0px;
+}
+
+#edit-submit {
+	
+	margin-bottom:8px;
+}
+
+#edit-publish {
+	
+	margin-bottom:8px;
+}
+
+.book-column.single-value-field.column-item-book-periodical {
+	
+	vertical-align: middle;
+}
+
+.book-column > div > div > .control-label, .book-column > div > .control-label {
+	
+	float:left;
+	width:125px;
+}
+
+.book-column.single-value-field.column-item-book-periodical > div > label {
+	
+	width:45px;
+}
+
+.book-column > div > div > .controls, .book-column > div > .controls {
+	
+	float:left;
+}
+
+#edit-body-und-0-value {
+	
+	width:531px !important;
+}
+
+#field-item-was-authored-by-add-more-wrapper > div.control-group {
+	
+	float:left;
+}
+
+/* #field-item-was-authored-by-add-more-wrapper > div.node-add-author {
+	
+	margin-left:125px;
+} */
+
+.token-list {
+	
+	margin:0px;
+}
+
+#edit-field-item-format-und {
+	
+	width:190px;
+}
+
+#edit-field-item-number-taxon-und, #edit-field-artifact-external-record-und-0-value {
+	
+	margin-bottom:0px;
+}
+
+/* by Thom: position elements on add loan form */
+
+.loan-column > div > label, .loan-column > div > div > label, #field-bib-rel-object-values > thead {
+	
+	float:left;
+	width:125px;
+}
+
+.date-no-float.start-date-wrapper.container-inline-date > div > label, .date-no-float.end-date-wrapper.container-inline-date > div > label {
+	
+	float:left;
+	width:125px;
+}
+
+.loan-column > div > div.controls, .loan-column > div > div > div.controls, #field-bib-rel-object-values > tbody {
+	
+	float:left;
+}
+
+.date-no-float.start-date-wrapper.container-inline-date > div > div.controls, .date-no-float.end-date-wrapper.container-inline-date > div > div.controls {
+	
+	float:left;
+}
+
+#edit-field-loan-duration-und-0-value, #edit-field-loan-duration-und-0-value2 {
+	
+	padding-top:8px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.control-group.form-type-date-text.form-item-field-loan-duration-und-0-value2.form-item {
+	
+	margin-bottom:-10px;
+}
+
+.control-group.form-type-date-text.form-item-field-loan-duration-und-0-value.form-item {
+	
+	margin-bottom:0px;
+}
+
+#field-bib-rel-object-values > tbody > tr > td > div > label {
+	
+	display:none;
+}
+
+#field-loan-duration-add-more-wrapper > fieldset > legend {
+	
+	display:none;
+}
+
+#edit-field-loan-other-notes-und-0-value {
+	
+	width:531px !important;
+	height:90px !important;
+}
+
+#loan-fields-a, #loan-fields-b, .duration-column.loan-column, .loan-columns-container, #edit-actions {
+	
+	margin:auto 8px;
+}
+
+button#add-item-modal {
+	
+	margin-bottom:8px;
+}
+
+/* by Thom: style check in and check out elements on add loan form */
+
+.date-wrapper-edit-field-loan-duration-und-0-value2-year, .date-wrapper-edit-field-loan-duration-und-0-value2-month, .date-wrapper-edit-field-loan-duration-und-0-value2-day {
+	
+	float:left;
+	margin-right:10px;
+}
+
+.date-wrapper-edit-field-loan-duration-und-0-value2-year > label, .date-wrapper-edit-field-loan-duration-und-0-value2-month > label, .date-wrapper-edit-field-loan-duration-und-0-value2-day > label {
+	
+	width:auto;
+}
+
+.date-wrapper-edit-field-loan-duration-und-0-value2-year > input {
+	
+	width:60px !important;
+}
+
+.date-wrapper-edit-field-loan-duration-und-0-value2-month > input, .date-wrapper-edit-field-loan-duration-und-0-value2-day > input {
+	
+	width:50px !important;
+}
+
+.date-wrapper-edit-field-loan-duration-und-0-value-year, .date-wrapper-edit-field-loan-duration-und-0-value-month, .date-wrapper-edit-field-loan-duration-und-0-value-day {
+	
+	float:left;
+	margin-right:10px;
+}
+
+.date-wrapper-edit-field-loan-duration-und-0-value-year > label, .date-wrapper-edit-field-loan-duration-und-0-value-month > label, .date-wrapper-edit-field-loan-duration-und-0-value-day > label {
+	
+	width:auto;
+}
+
+.date-wrapper-edit-field-loan-duration-und-0-value-year > input {
+	
+	width:60px !important;
+}
+
+.date-wrapper-edit-field-loan-duration-und-0-value-month > input, .date-wrapper-edit-field-loan-duration-und-0-value-day > input {
+	
+	width:50px !important;
+}
+
+/* by Thom: style ledger buttons on add loan form */
+
+.loan-subset-selection {
+	
+	margin-left:calc((100% - 570px) / 2);
+	margin-bottom:5px;
+}
+
+.btn.form-submit {
+	
+	background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #404040;
+    text-shadow: none;
+}
+
+.btn.form-submit.active {
+	
+	background:#E4E4E4;
+}
+
+/* by Thom: style legend on add forms */
+
+.add-form-legend-circle {
+	
+	font-size:36px;
+	vertical-align:top;
+}
+
+.add-form-legend-asterisk {
+	
+	font-size:large;
+	font-weight:bold;
+	vertical-align:middle;
+}
+
+.add-form-legend {
+	
+	text-align:center;
+}
+
+.add-form-legend > ul {
+	
+	list-style:none;
+	margin-left:0px;
+}
+
+.add-form-legend > ul > li {
+	
+	line-height:18px;
+}
+
+/* by Thom: style browse loans table */
+
+.view-loans > div > table > tbody > tr > td, .view-loans > div > table > thead {
+	
+	border: 1px solid #D6CDBC !important;
+	border-collapse:collapse !important;
+	background: #F7EEDD !important;
+}
+
+.view-loans > div > table > thead > tr > th {
+	
+	border-top: 1px solid #D6CDBC !important;
+	border-left: 1px solid #D6CDBC !important;
+	border-right: 1px solid #D6CDBC !important;
+	border-bottom:2px solid #BDB5A4 !important;
+	border-collapse:collapse !important;
+	background: #EBE3D2 !important;
+	text-align:center !important;
+}
+
+/*by Thom: style browse loans pagination controls */
+
+.view > .pagination {
+	
+	display:none;
+}
+
+/* .view-loans > .pagination > ul > li > a, .view-loans > .pagination > ul > li > span {
+	
+	background: #F7EEDD;
+	border-width: 1px 1px 1px 0px; 
+	border-style:solid;
+	border-color: #D6CDBC;
+	border-collapse:collapse;
+}
+
+.view-loans > .pagination > ul > li.first > a {
+	
+	border-width: 1px 1px 1px 1px; 
+	border-style: solid;
+	border-color: #D6CDBC;
+}
+
+.view-loans > .pagination > ul > li.pager-current > a {
+	
+	background: #ECE3D2;
+	box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+	-moz-box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+	-webkit-box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+} */
+
+/* by Thom: style browse people table */
+
+.view-people > div > table > tbody > tr > td, .view-people > div > table > thead {
+	
+	border: 1px solid #D6CDBC !important;
+	border-collapse:collapse !important;
+	background: #F7EEDD !important;
+}
+
+.view-people > div > table > thead > tr > th {
+	
+	border-top: 1px solid #D6CDBC !important;
+	border-left: 1px solid #D6CDBC !important;
+	border-right: 1px solid #D6CDBC !important;
+	border-bottom:2px solid #BDB5A4 !important;
+	border-collapse:collapse !important;
+	background: #EBE3D2 !important;
+	text-align:center !important;
+}
+
+/*by Thom: style browse people pagination controls */
+
+.view-people > .pagination {
+	
+	display:none;
+}
+
+/* .view-people > .pagination > ul > li > a, .view-people > .pagination > ul > li > span {
+	
+	background: #F7EEDD;
+	border-width: 1px 1px 1px 0px; 
+	border-style:solid;
+	border-color: #D6CDBC;
+	border-collapse:collapse;
+}
+
+.view-people > .pagination > ul > li.first > a {
+	
+	border-width: 1px 1px 1px 1px; 
+	border-style: solid;
+	border-color: #D6CDBC;
+}
+
+.view-people > .pagination > ul > li.pager-current > a {
+	
+	background: #ECE3D2;
+	box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+	-moz-box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+	-webkit-box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+} */
+
+/**
+ * Views styling
+ * @author griffinj@lafayette.edu
+ * @todo Restructure and migrate into a different stylesheet
+ */
+
+/**
+ * DataTables widget integration
+ * @author griffinj@lafayette.edu (Properties by @goodnowt; Restructuring selectors for more generic application)
+ */
+.views-table tbody td, .views-table thead {
+	
+	border: 1px solid #D6CDBC !important;
+	border-collapse:collapse !important;
+	background: #F7EEDD  !important;
+}
+
+.views-table thead th {
+	
+	border-top: 1px solid #D6CDBC !important;
+	border-left: 1px solid #D6CDBC !important;
+	border-right: 1px solid #D6CDBC !important;
+	border-bottom:2px solid #BDB5A4 !important;
+	border-collapse:collapse !important;
+	background-color: #EBE3D2 !important;
+	text-align:center !important;
+}
+
+/* by Thom: style browse items table */
+
+.view-items > div > table > tbody > tr > td, .view-items > div > table > thead {
+	
+	border: 1px solid #D6CDBC !important;
+	border-collapse:collapse !important;
+	background: #F7EEDD !important;
+}
+
+.view-items > div > table > thead > tr > th {
+	
+	border-top: 1px solid #D6CDBC !important;
+	border-left: 1px solid #D6CDBC !important;
+	border-right: 1px solid #D6CDBC !important;
+	border-bottom:2px solid #BDB5A4 !important;
+	border-collapse:collapse !important;
+	background: #EBE3D2 !important;
+	text-align:center !important;
+}
+
+/* by Thom: CSS to override data tables CSS */
+
+table.dataTable.no-footer {
+	
+	border-bottom:0px !important;
+}
+
+table.dataTable {
+	
+	border-collapse: collapse !important;
+	width:auto !important;
+}
+
+table.dataTable, table.dataTable th, table.dataTable td {
+	
+	box-sizing:border-box !important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+	
+	padding:8px 10px !important;
+}
+
+/*by Thom: style browse items pagination controls */
+
+.view-items > .pagination {
+	
+	display:none;
+}
+
+/* .view-items > .pagination > ul > li > a, .view-items > .pagination > ul > li > span {
+	
+	background: #F7EEDD;
+	border-width: 1px 1px 1px 0px; 
+	border-style:solid;
+	border-color: #D6CDBC;
+	border-collapse:collapse;
+}
+
+.view-items > .pagination > ul > li.first > a {
+	
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #D6CDBC;
+}
+
+.view-items > .pagination > ul > li.pager-current > a {
+	
+	background: #ECE3D2;
+	box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+	-moz-box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+	-webkit-box-shadow: inset 0px 0px 5px 1px #EAE2D1;
+} */
+
+/* by Thom: style add human modal form */
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable > #add-human-modal {
+	
+	margin-left:0px;
+	height: 515px !important;
+}
+
+#add-human-modal > form > div > div > div > div > div.human-column, #add-human-modal > form > div > div > div > div.human-column, #add-human-modal > form > div > div > div > div#edit-actions {
+	
+	margin:0px;
+}
+
+/* by Thom: style add item modal form */
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable > #add-item-modal {
+	
+	margin-left:0px;
+	height: 605px !important;
+}
+
+/* by Thom: box shadow on modal forms */
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable {
+	
+	box-shadow: 0px 10px 5px #888888;
+}
+
+/* by Thom: fix font on modal forms */
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable > #add-human-modal, .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable > #add-item-modal {
+	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	line-height:20px;
+}
+
+/* by Thom: hide extraneous divs on add person modal */
+
+#add-human-modal > form > div > div > div:nth-child(3), #add-human-modal > form > div > div > div:nth-child(4) {
+	
+	display:none;
+}
+
+/* by Thom: background on ELC header */
+
+.navbar-header {
+	
+	background-image: url("../files/ELC_Banner.jpg"), url("../files/ELCrepeatingtile.jpg");
+	background-repeat:no-repeat, repeat;
+}
+
+/* by Thom: fix height above header banner when logged in through drupal */
+
+body.toolbar-drawer, body.toolbar {
+	
+	padding-top:65px !important;
+}
+
+/* by Thom: footer background to bottom of browser viewport */
+
+.footer.container {
+	
+	padding-bottom:0px;
+}
+
+body > div {
+	
+	background-color:#DBD2C1;
+}
+
+.navbar {
+	
+	margin-bottom:0px;
+}
+
+.panel-container {
+	
+	padding-top:20px;
+}
+
+.footer.container {
+	
+	background-color:#DBD2C1;
+	margin-top:0px;
+}
+
+.panel-container.container {
+	
+	width:auto;
+}
+
+/* by Thom: hide ajax throbber on browse pages */
+
+.ajax-progress .throbber {
+	
+	display:none;
+}
+
+/* by Thom: hide search control for now to restrict widget access */
+
+#advanced-search-modal {
+	
+	display:none !important;
+}
+
+/* by Thom: style inputs on contact form */
+
+#edit-submitted-your-name, #edit-submitted-your-e-mail-address, #edit-submitted-subject {
+	
+	width: 206px !important;
+}
+
+#edit-submitted-message {
+	
+	width:100% !important;
+}
+
+/* by Thom: resize column widths for elements on add person modal form */
+
+#add-human-modal .human-column > div > div > label, #add-human-modal .human-column > div > label, #add-human-modal .field-human-pers-rels-fields > div > div > label {
+	
+	width:100px;
+}
+
+#add-human-modal div.controls > input {
+	
+	width:445px !important;
+}
+
+#add-human-modal #edit-body-und-0-value {
+	
+	width:544px !important;
+}
+
+#add-human-modal .token-list li {
+	
+	margin-top:0px;
+}
+
+/* by Thom: resize column widths for elements on add item modal form */
+
+#add-item-modal .book-column > div > div > label, #add-item-modal .book-column > div > label {
+	
+	width:115px;
+}
+
+#add-item-modal div.controls > input {
+	
+	width:430px !important;
+}
+
+#add-item-modal #edit-body-und-0-value {
+	
+	width:544px !important;
+}
+
+#add-item-modal .token-list li {
+	
+	margin-top:0px;
+}
+
+#add-item-modal .book-column {
+	
+	margin-left:0px;
+	margin-right:0px;
+}
+
+/* by Thom: style view loan page */
+
+.node-loan > .field-entries {
+	
+	padding:0px;
+	border-left:1px solid #d6cdbc;
+	border-right:1px solid #d6cdbc;
+	border-bottom:1px solid #d6cdbc;
+	border-top:0px;
+	background-color: #f7eedd;
+	border-radius: 0px;
+	width:auto;
+	margin-left:calc((100% - 722px) / 2);
+}
+
+.node-loan > .field-entries > .field {
+	
+	border-top:1px solid #D6CDBC;
+	border-collapse:collapse;
+	display:flex;
+}
+
+.node-loan > .field-entries > div > .field-label {
+	
+	border-right:1px solid #d6cdbc;
+	padding:4px 10px;
+	width:180px;
+	background-color:#EBE3D2;
+}
+
+.node-loan > .field-entries > div > .field-items {
+	
+	border-left:1px solid #d6cdbc;
+	padding:4px 10px;
+	width:500px;
+}
+
+.node-loan .node-human {
+	
+	margin:0px;
+	background-color: #f7eedd;
+}
+
+.node-loan .node-human h2 {
+	
+	margin:0px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight:normal;
+}
+
+.node-loan .node-human .field-entries {
+	
+	display:none;
+}
+
+/* by Thom: fix column widths browse people table */
+
+.views-field.views-field-title {
+	
+	width:300px !important;
+	vertical-align:middle;
+}
+
+.views-field-title.sorting, .views-field-title.sorting_asc, .views-field-title.sorting_desc {
+	
+	background-position: 170px 8px !important;
+}
+
+.views-field > input {
+	
+	width:100% !important;
+	margin-bottom:0px !important;
+}
+
+.views-field.views-field-changed {
+	
+	width:140px !important;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.views-field-changed.sorting, .views-field-changed.sorting_asc, .views-field-changed.sorting_desc {
+	
+	background-position: 100px 8px !important;
+}
+
+.views-field.views-field-view-node {
+	
+	width:60px !important;
+	text-align:center;
+	vertical-align:middle;
+	background-image:none !important;
+	cursor:default !important;
+}
+
+.views-field.views-field-edit-node {
+	
+	width:60px !important;
+	text-align:center;
+	vertical-align:middle;
+	background-image:none !important;
+	cursor:default !important;
+}
+
+.views-table {
+	
+	width:auto !important;
+}
+
+.view-people table {
+	
+	margin-left:calc((100% - 561px) / 2) !important;
+}
+
+/* by Thom: fix column widths browse loans table */
+
+.views-field.views-field-field-loan-shareholder {
+	
+	width:180px !important;
+	vertical-align:middle;
+}
+
+.views-field-field-loan-shareholder.sorting, .views-field-field-loan-shareholder.sorting_asc, .views-field-field-loan-shareholder.sorting_desc {
+	
+	background-position: 130px 8px !important;
+}
+
+.views-field.views-field-field-bib-rel-subject {
+	
+	width:180px !important;
+	vertical-align:middle;
+}
+
+.views-field-field-bib-rel-subject.sorting, .views-field-field-bib-rel-subject.sorting_asc, .views-field-field-bib-rel-subject.sorting_desc {
+	
+	background-position: 140px 8px !important;
+}
+
+.views-field.views-field-field-loan-duration {
+	
+	width:145px !important;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.views-field-field-loan-duration.sorting, .views-field-field-loan-duration.sorting_asc, .views-field-field-loan-duration.sorting_desc {
+	
+	background-position: 105px 8px !important;
+}
+
+.views-field.views-field-field-bib-rel-object {
+	
+	width:250px !important;
+	vertical-align:middle;
+}
+
+.views-field-field-bib-rel-object.sorting, .views-field-field-bib-rel-object.sorting_asc, .views-field-field-bib-rel-object.sorting_desc {
+	
+	background-position: 140px 8px !important;
+}
+
+.views-field.views-field-field-loan-volumes-loaned {
+	
+	width:115px !important;
+	vertical-align:middle;
+}
+
+.views-field-field-loan-volumes-loaned.sorting, .views-field-field-loan-volumes-loaned.sorting_asc, .views-field-field-loan-volumes-loaned.sorting_desc {
+	
+	background-position: 72px 8px !important;
+}
+
+.view-loans table {
+	
+	margin-left:calc((100% - 1131px) / 2) !important;
+}
+
+/* by Thom: set column widths for browse items table */
+
+.views-field.views-field-field-artifact-was-authored-by {
+	
+	width:180px !important;
+	vertical-align:middle;
+}
+
+.views-field-field-artifact-was-authored-by.sorting, .views-field-field-artifact-was-authored-by.sorting_asc, .views-field-field-artifact-was-authored-by.sorting_desc {
+	
+	background-position: 110px 8px !important;
+}
+
+.views-field.views-field-title {
+	
+	width:250px !important;
+	vertical-align:middle;
+}
+
+.views-field-title.sorting, .views-field-title.sorting_asc, .views-field-title.sorting_desc {
+	
+	background-position: 140px 8px !important;
+}
+
+.views-field.views-field-field-item-volume {
+	
+	width:115px !important;
+	vertical-align:middle;
+}
+
+.views-field-field-item-volume.sorting, .views-field-field-item-volume.sorting_asc, .views-field-field-item-volume.sorting_desc {
+	
+	background-position: 72px 8px !important;
+}
+
+.views-field.views-field-type {
+	
+	width:115px !important;
+	vertical-align:middle;
+}
+
+.views-field-type.sorting, .views-field-type.sorting_asc, .views-field-type.sorting_desc {
+	
+	background-position: 72px 8px !important;
+}
+
+.views-field.views-field-field-item-subject {
+	
+	width:135px !important;
+	vertical-align:middle;
+}
+
+.views-field-field-item-subject.sorting, .views-field-field-item-subject.sorting_asc, .views-field-field-item-subject.sorting_desc {
+	
+	background-position: 92px 8px !important;
+}
+
+.view-items table {
+	
+	margin-left:calc((100% - 1056px) / 2) !important;
+}
+
+/* by Thom: reset navbar button width for six buttons */
+
+.navbar .nav > li.btn {
+	
+	width:87px;
+}
+
+/* by Thom: style recent blog posts index page */
+
+#node-167133 {
+	
+	max-width:548px;
+	margin-left:calc((100% - 548px) / 2);
+	background-color:#F7EEDD;
+    border: 1px solid #D6CDBC;
+}
+
+#node-167133 > header {
+	
+	margin: 8px;
+}
+
+#node-167133 > header > h2 {
+	
+	margin:0px;
+	font-size:30px;
+	font-weight:normal;
+	line-height: 34px;
+}
+
+#node-167133 > div {
+	
+	margin: auto 8px;
+}
+
+#node-167133 > footer {
+	
+	margin: auto 8px;
+}
+
+#node-167133 .user-picture {
+	
+	display:none;
+}
+
+#node-167133 .blog_usernames_blog {
+	
+	display:none;
+}
+
+/* by Thom: jquery data tables ui controls */
+
+#DataTables_Table_0_length, #DataTables_Table_0_filter {
+	
+	background-color: #F7EEDD;
+	border:1px solid #D6CDBC;
+	padding:5px;
+	border-radius:3px;
+	margin-bottom:10px;
+}
+
+#DataTables_Table_0_length label, #DataTables_Table_0_filter label, #DataTables_Table_0_filter input {
+	
+	margin-bottom:0px;
+}
+
+#DataTables_Table_0_length select {
+	
+	width:65px;
+	margin-bottom:0px;
+}
+
+#DataTables_Table_0_info {
+	
+	background-color: #F7EEDD;
+	border:1px solid #D6CDBC;
+	padding:7px 10px;
+	border-radius:3px;
+	margin-top:10px;
+}
+
+#DataTables_Table_0_paginate {
+	
+	background-color: #F7EEDD;
+	border:1px solid #D6CDBC;
+	padding:5px;
+	border-radius:3px;
+	margin-top:10px;
+}
+
+.paginate_button {
+	
+	padding: 1px 8px !important;
+}
+
+.paginate_button.current, .paginate_button.current:hover {
+	
+	background-color: #EBE3D2 !important;
+	background-image: none !important;
+	border:1px solid #BDB5A4 !important;
+}
+
+.paginate_button:hover {
+	
+	background-color: #F7EEDD !important;
+	border:1px solid #BDB5A4 !important;
+}
+
+/* by Thom: style view person page */
+
+.node-human .field-entries {
+	
+	width:auto;
+	background: #F7EEDD;
+	border: 1px solid #D6CDBC;
+	overflow:auto;
+	margin-bottom:20px;
+	width: 752px;
+	margin-left:calc((100% - 752px) / 2);
+} 
+
+.node-human .field-entries .field {
+	
+	clear:both;
+	border-top:1px solid #D6CDBC;
+	display:flex;
+}
+
+.node-human .field-entries .field:first {
+	
+	border-top:0px;
+}
+
+.node-human .field-entries .field-label {
+	
+	float:left;
+	width:110px;
+	border-right: 1px solid #D6CDBC;
+	padding: 4px 10px;
+	background-color:#EBE3D2;
+}
+
+.node-human .field-entries .field-items {
+	
+	float:left;
+	width:600px;
+	border-left: 1px solid #D6CDBC;
+	padding: 4px 10px;
+}
+
+.node-human .pagination {
+	
+	display:none;
+}
+
+/* by Thom: style manifestation record view page */
+
+.node-manifestation {
+	
+	width:auto;
+	background: #F7EEDD;
+	border: 1px solid #D6CDBC;
+	overflow:auto;
+	margin-bottom:20px;
+	width: 772px;
+	margin-left:calc((100% - 752px) / 2);
+} 
+
+.node-manifestation .field {
+	
+	clear:both;
+	border-top:1px solid #D6CDBC;
+	display:flex;
+}
+
+.node-manifestation .field:first {
+	
+	border-top:0px;
+}
+
+.node-manifestation .field-label {
+	
+	float:left;
+	width:130px;
+	border-right: 1px solid #D6CDBC;
+	padding: 4px 10px;
+	background-color:#EBE3D2;
+}
+
+.node-manifestation .field-items {
+	
+	float:left;
+	width:600px;
+	border-left: 1px solid #D6CDBC;
+	padding: 4px 10px;
+}
+
+/* by Thom: style item record view page */
+
+.node-book {
+	
+	width:auto;
+} 
+
+.node-book > .field {
+	
+	clear:both;
+	border-top:1px solid #D6CDBC;
+	display:flex;
+	background: #F7EEDD;
+	margin-left:calc((100% - 752px) / 2);
+	width:752px;
+}
+
+.node-book .field.field-name-body.field-type-text-with-summary.field-label-hidden {
+	
+	display:none;
+}
+
+.node-book .field-name-field-item-number-taxon {
+	
+	border-bottom:1px solid #D6CDBC;
+	margin-bottom:20px;
+}
+
+.node-book > .field > .field-label {
+	
+	float:left;
+	width:130px;
+	border-right: 1px solid #D6CDBC;
+	padding: 4px 10px;
+	background-color:#EBE3D2;
+}
+
+.node-book > .field > .field-items {
+	
+	float:left;
+	width:600px;
+	border-left: 1px solid #D6CDBC;
+	padding: 4px 10px;
+}
+
+.node-book .pagination {
+	
+	display:none;
+}
+
+/* by Thom: style add relationship form */
+
+#personal-relationship-node-form .loan-column {
+	
+	float: left;
+    margin: auto 8px;
+    width: auto;
+}
+
+#personal-relationship-node-form #edit-field-pers-rel-object-und {
+	
+	margin-bottom: 0px;
+}
+
+#personal-relationship-node-form button#add-human-modal {
+	
+	margin-bottom:8px;
+}
+
+/* by Thom: ledger page OSD viewer pages */
+
+.main-container.snap-collapse-left {
+	
+	float:none;
+}
+
+.span12 > a {
+	
+	display:none;
+}
+	
+	/*background-color: #F7EEDD;
+    border: 1px solid #D6CDBC;
+    border-radius: 3px;
+    padding: 7px 14px;
+    margin-left:1%;
+}
+
+.span12 > a#main-content {
+	
+	display:none;
+}*/
+
+#book-page-viewer {
+	
+	margin-top: 15px;
+}
+
+#book-page-viewer fieldgroup {
+	
+	margin-left:2px !important;
+}
+
+/* by Thom: style home page content */
+
+.elc-home-matter {
+	
+	background-color:#F7EEDD;
+    border: 1px solid #D6CDBC;
+    padding:7px 14px;
+    border-radius:3px;
+}
+
+.easton-front-image img {
+	
+	border:1px solid #C9C0AF;
+}
+
+/* by Thom: set margins on pages for single record view */
+
+.node-human, .node-book, .node-loan {
+	
+	margin:0px;
+}
+
+/* by Thom: modify background color of OSD */
+
+#islandora-openseadragon > form > div > canvas {
+	
+	background-color:#F7EEDD !important;
+}
+
+/* by Thom: style network analysis tool */
+
+.well {
+	
+	background-color: #F7EEDD;
+	border: 1px solid #d6cdbc;
+	width:822px;
+	margin-left:calc((100% - 822px) / 2);
+}
+
+#block-dss-elc-visualize-network {
+	
+	margin-top:0px;
+	padding:0px;
+}
+
+#block-dss-elc-visualize-network > h2 {
+	
+	line-height:34px;
+	margin-bottom:15px;
+}
+
+#block-dss-elc-visualize-network #edit-network-metrics {
+	
+	margin-left:10px;
+}
+
+#block-dss-elc-visualize-network .form-type-entityreference {
+	
+	width:auto;
+	float:left;
+}
+
+#block-dss-elc-visualize-network .form-type-entityreference label {
+	
+	width:auto;
+}
+
+#block-dss-elc-visualize-network .form-type-entityreference  div.controls {
+	
+	width:auto;
+}
+
+#block-dss-elc-visualize-network .form-type-entityreference  div.controls > input {
+	
+	height:29px !important;
+}
+
+
+#block-dss-elc-visualize-network .form-type-select {
+	
+	width:auto;
+	float:left;
+	margin-left:10px;
+}
+
+#block-dss-elc-visualize-network .form-type-select div.controls select {
+	
+	width:250px;
+}
+
+#block-dss-elc-visualize-network .form-type-slider {
+	
+	clear:both;
+	width:
+}
+
+#block-dss-elc-visualize-network .form-type-slider > div.controls {
+	
+	margin-left:8px;
+}
+
+#block-dss-elc-visualize-network .form-type-slider > label {
+	
+	width:111px;
+	text-align:center;
+}
+
+#block-dss-elc-visualize-network .ui-slider-legend {
+	
+	margin-top:3px;
+	width:111px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#block-dss-elc-visualize-network #edit-network-metrics > button {
+	
+	margin-bottom:15px;
+}
+
+#block-dss-elc-visualize-network #edit-actions--4 {
+	
+	display:none;
+}
+
+#network-visualize {
+	
+	clear:both;
+}
+
+/* by Thom: style D3 network svg */
+
+#network-visualize > svg {
+	
+	background-color: #F5F5F5;
+	padding:10px;
+	border: 1px solid #E5DCCB;
+	border-radius:2px;
+}
+
+.metricsLegend, .nodeLegend, .linkLegend {
+	
+	font-weight:bold;
+}
+
+#node-167134.node-page {
+	
+	display:none;
+} 
+
+.node-Representative {
+	
+	fill:#FF9F46 !important;
+}
+
+.node-Shareholder {
+	
+	fill:#9A1321 !important;
+}
+
+.node-human {
+	
+	fill:#9A1321 !important;
+}
+
+.node-book {
+	
+	fill:#027002 !important;
+}
+
+.node-periodical {
+	
+	fill:#4B28FF !important;
+}
+
+.node-Parent {
+	
+	fill:#CFAC02 !important;
+}
+
+.node-Child {
+	
+	fill:#E89413 !important;
+}
+
+.node-Church {
+	
+	fill:#87611B !important;
+}
+
+.node-Employee {
+	
+	fill: #004D60 !important;
+}
+
+.node-Servant {
+	
+	fill: #637939 !important;
+}
+
+.node-Sibling {
+	
+	fill: #961161 !important;
+}
+
+/**
+ * @author griffinj@lafayette.edu
+ * Terrible work-around implemented in the name of conserving time
+ * @todo These should be properly integrated into the color map for the D3 visualization
+ * Resolves EDDC-198
+ */
+.nodeLegendShareholder {
+
+    fill: #9A1321 !important;
+}
+
+.nodeLegendRepresentative {
+
+    fill: #FF9F46 !important;
+}
+
+/*by Thom: rest of legend for D3 */
+
+.nodeLegendPerson {
+	
+	fill:#9A1321 !important;
+}
+
+.nodeLegendBook {
+	
+	fill:#027002 !important;
+}
+
+.nodeLegendPeriodical {
+	
+	fill:#4B28FF !important;
+}
+
+.nodeLegendChild {
+	
+	fill:#E89413 !important;
+}
+
+.nodeLegendParent {
+	
+	fill:#CFAC02 !important;
+}
+
+.nodeLegendChurch {
+	
+	fill:#87611B !important;
+}
+
+.nodeLegendEmployee {
+	
+	fill: #004D60 !important;
+}
+
+.nodeLegendServant {
+	
+	fill: #637939 !important;
+}
+
+.nodeLegendSibling {
+	
+	fill: #961161 !important;
+}
+
+/* by Thom: style line colors on network visualization */
+
+.link-hasEmployee {
+	
+	stroke: #4E9BAE !important;
+}
+
+.link-isChildOf {
+	
+	stroke: #FFBD44 !important;
+}
+
+.link-isSiblingOf {
+	
+	stroke: #D550A0 !important;
+}
+
+.link-isParentOf {
+	
+	stroke: #F5D73A !important;
+}
+
+.link-hasServant {
+	
+	stroke: #96AC6C !important;
+}
+
+.link-isMemberOf {
+	
+	stroke: #AE8842 !important;
+}
+
+/* by Thom: style univariate analysis page */
+
+#node-167137.node-page {
+	
+	display:none;
+}
+
+#block-dss-elc-visualize-univariate {
+	
+	margin-top:0px;
+	padding:0px;
+}
+
+#block-dss-elc-visualize-univariate > h2 {
+	
+	line-height:34px;
+	margin-bottom:15px;
+}
+
+#block-dss-elc-visualize-univariate #edit-univariate {
+	
+	margin-left:10px;
+}
+
+#block-dss-elc-visualize-univariate #edit-actions--4 {
+	
+	display:none;
+}
+
+#block-dss-elc-visualize-univariate div.form-type-select {
+	
+	float:left;
+	margin-right:10px;
+}
+
+#block-dss-elc-visualize-univariate #bundle-fields-div {
+	
+	float:left;
+}
+
+#block-dss-elc-visualize-univariate #edit-submit--4 {
+	
+	clear:both;
+	width:auto;
+}
+
+#univariate-visualize {
+	
+	background-color: #F5F5F5;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+/* by Thom: style bivariate analysis page */
+
+#node-167136.node-page {
+	
+	display:none;
+}
+
+#block-dss-elc-visualize-bivariate {
+	
+	margin-top:0px;
+	padding:0px;
+}
+
+#block-dss-elc-visualize-bivariate > h2 {
+	
+	line-height:34px;
+	margin-bottom:15px;
+}
+
+#block-dss-elc-visualize-bivariate #edit-bivariate {
+	
+	margin-left:10px;
+}
+
+#block-dss-elc-visualize-bivariate #edit-actions--4 {
+	
+	display:none;
+}
+
+#block-dss-elc-visualize-bivariate div.form-type-select {
+	
+	float:left;
+	margin-right:10px;
+	clear:both;	
+}
+
+#block-dss-elc-visualize-bivariate #bundle-fields-u-div, #block-dss-elc-visualize-bivariate #bundle-fields-v-div {
+	
+	float:left;
+}
+
+#block-dss-elc-visualize-bivariate #edit-submit--4 {
+	
+	clear:both;
+	width:auto;
+}
+
+#bivariate-visualize {
+	
+	background-color: #F5F5F5;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
