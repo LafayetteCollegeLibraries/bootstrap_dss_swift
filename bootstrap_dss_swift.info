@@ -1,5 +1,5 @@
-name = The Easton Library Company Theme
-description = The Lafayette College Libraries Easton Library Company Bootstrap Theme
+name = The Swift Poems Project Theme
+description = The Lafayette College Libraries Swift Poems Project Bootstrap Theme
 core = 7.x
 base theme = bootstrap_lafayette_lib_dss
 

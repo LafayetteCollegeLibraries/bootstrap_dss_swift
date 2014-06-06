@@ -11,7 +11,7 @@
    * @see islandora_solr_islandora_solr
    *
    */
-function bootstrap_dss_elc_preprocess_islandora_solr(&$variables) {
+function bootstrap_dss_swift_preprocess_islandora_solr(&$variables) {
 
   $display = (empty($_GET['display'])) ? 'list' : $_GET['display'];
 
@@ -161,7 +161,7 @@ function bootstrap_dss_elc_preprocess_islandora_solr(&$variables) {
   //dpm($variables);
 }
 
-function bootstrap_dss_elc_islandora_discovery_form($form, &$form_state, $collection_fields, $sorted_field) {
+function bootstrap_dss_swift_islandora_discovery_form($form, &$form_state, $collection_fields, $sorted_field) {
 
   $form = array('#attributes' => array('id' =>'islandora-discovery-form'));
 
@@ -242,7 +242,7 @@ function bootstrap_dss_elc_islandora_discovery_form($form, &$form_state, $collec
   return $form;
 }
 
-function bootstrap_dss_elc_process_islandora_solr_wrapper(&$variables) {
+function bootstrap_dss_swift_process_islandora_solr_wrapper(&$variables) {
 
   $display = (empty($_GET['display'])) ? variable_get('islandora_basic_collection_default_view', 'grid') : $_GET['display'];
   $variables['display'] = $display;
@@ -273,9 +273,9 @@ function bootstrap_dss_elc_process_islandora_solr_wrapper(&$variables) {
 					     'style' => ''));
   
   // Refactor
-  $view_icon_srcs = array('Refine' => base_path() . drupal_get_path('theme', 'bootstrap_dss_elc') . '/files/RefineIcon.png',
-			  'List' => base_path() . drupal_get_path('theme', 'bootstrap_dss_elc') . '/files/ListIcon.png',
-			  'Grid' => base_path() . drupal_get_path('theme', 'bootstrap_dss_elc') . '/files/GridIcon.png');
+  $view_icon_srcs = array('Refine' => base_path() . drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/RefineIcon.png',
+			  'List' => base_path() . drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/ListIcon.png',
+			  'Grid' => base_path() . drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/GridIcon.png');
 
   $variables['view_icon_srcs'] = $view_icon_srcs;
   
@@ -357,7 +357,7 @@ function bootstrap_dss_elc_process_islandora_solr_wrapper(&$variables) {
     $variables['islandora_discovery_form'] = '';
   } else {
 
-    $variables['islandora_discovery_form'] = drupal_render_children(drupal_get_form('bootstrap_dss_elc_islandora_discovery_form', $collection_fields, $sorted_field));
+    $variables['islandora_discovery_form'] = drupal_render_children(drupal_get_form('bootstrap_dss_swift_islandora_discovery_form', $collection_fields, $sorted_field));
   }
 
   /*

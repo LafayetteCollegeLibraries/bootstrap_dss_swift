@@ -5,7 +5,7 @@
  * Theming for menu trees, menu items, and menu links
  */
 
-function bootstrap_dss_elc_menu_link__main_menu(&$variables) {
+function bootstrap_dss_swift_menu_link__main_menu(&$variables) {
 
   $element = $variables['element'];
   $sub_menu = '';
@@ -68,7 +68,7 @@ function bootstrap_dss_elc_menu_link__main_menu(&$variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
   }
 
-function bootstrap_dss_elc_menu_tree__menu_footer_menu(&$variables) {
+function bootstrap_dss_swift_menu_tree__menu_footer_menu(&$variables) {
 
   return theme_menu_tree($variables);
 }
@@ -78,7 +78,7 @@ function bootstrap_dss_elc_menu_tree__menu_footer_menu(&$variables) {
  *
  * @see https://drupal.org/node/345624
  */
-function bootstrap_dss_elc_menu_link__menu_footer_menu(&$variables) {
+function bootstrap_dss_swift_menu_link__menu_footer_menu(&$variables) {
 
   $variables['element']['#attributes']['class'][] = 'footer-menu-item';
 
@@ -92,7 +92,7 @@ function bootstrap_dss_elc_menu_link__menu_footer_menu(&$variables) {
  * For handling CAS menu styling (custom menu added as a Drupal administrator)
  *
  */
-function bootstrap_dss_elc_menu_link__menu_authentication_cas(&$variables) {
+function bootstrap_dss_swift_menu_link__menu_authentication_cas(&$variables) {
 
   //$element = $variables['element'];
 
@@ -113,7 +113,7 @@ function bootstrap_dss_elc_menu_link__menu_authentication_cas(&$variables) {
  */
 
 /*
-function bootstrap_dss_elc_preprocess_menu_link(&$variables) {
+function bootstrap_dss_swift_preprocess_menu_link(&$variables) {
 
   dpm($variables);
 }

@@ -6,7 +6,7 @@
    *
    */
 
-function bootstrap_dss_elc_process_islandora_basic_collection(&$variables) {
+function bootstrap_dss_swift_process_islandora_basic_collection(&$variables) {
 
   $islandora_object = $variables['islandora_object'];
   $collection_pid = $islandora_object->id;
@@ -106,7 +106,7 @@ function bootstrap_dss_elc_process_islandora_basic_collection(&$variables) {
   
   }
 
-function bootstrap_dss_elc_preprocess_islandora_basic_collection_wrapper(&$variables) {
+function bootstrap_dss_swift_preprocess_islandora_basic_collection_wrapper(&$variables) {
   
   $variables['slide_drawers'] = TRUE;
 

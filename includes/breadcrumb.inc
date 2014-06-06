@@ -13,7 +13,7 @@ define('BOOTSTRAP_DSS_DIGITAL_BREADCRUMBS_MAX', 52);
  *
  * Print breadcrumbs as a list, with separators.
  */
-function bootstrap_dss_elc_breadcrumb($variables) {
+function bootstrap_dss_swift_breadcrumb($variables) {
 
   $breadcrumb = $variables['breadcrumb'];
   $breadcrumb[] = l(t('Home'), '<front>');

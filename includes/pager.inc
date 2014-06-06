@@ -10,7 +10,7 @@
  * Implements theme_pager_first().
  * @todo Refactor into a hook_process_HOOK implementation
  */
-function bootstrap_dss_elc_pager_first($variables) {
+function bootstrap_dss_swift_pager_first($variables) {
 
   $text = $variables['text'];
   $element = $variables['element'];
@@ -31,7 +31,7 @@ function bootstrap_dss_elc_pager_first($variables) {
  * Implements theme_pager_previous().
  *
  */
-function bootstrap_dss_elc_pager_previous($variables) {
+function bootstrap_dss_swift_pager_previous($variables) {
 
   $text = $variables['text'];
   $element = $variables['element'];
@@ -94,7 +94,7 @@ function bootstrap_dss_elc_pager_previous($variables) {
  * Implements theme_pager_next().
  *
  */
-function bootstrap_dss_elc_pager_next($variables) {
+function bootstrap_dss_swift_pager_next($variables) {
 
   $text = $variables['text'];
   $element = $variables['element'];
@@ -160,7 +160,7 @@ function bootstrap_dss_elc_pager_next($variables) {
  * Implements theme_pager_last().
  * @todo Refactor into a hook_process_HOOK implementation
  */
-function bootstrap_dss_elc_pager_last($variables) {
+function bootstrap_dss_swift_pager_last($variables) {
 
   $text = $variables['text'];
   $element = $variables['element'];
@@ -191,7 +191,7 @@ function bootstrap_dss_elc_pager_last($variables) {
    *     the pager links.
    *   - quantity: The number of pages in the list.
    */
-function bootstrap_dss_elc_pager($variables) {
+function bootstrap_dss_swift_pager($variables) {
 
   $output = "";
   $tags = $variables['tags'];

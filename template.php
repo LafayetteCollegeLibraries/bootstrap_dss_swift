@@ -21,7 +21,7 @@ require_once dirname(__FILE__) . '/includes/islandora_basic_collection.inc';
 
 require_once dirname(__FILE__) . '/includes/breadcrumb.inc';
 
-function bootstrap_dss_elc_process_node(&$vars) {
+function bootstrap_dss_swift_process_node(&$vars) {
 
   if($vars['type'] == 'loan') {
 
@@ -34,7 +34,7 @@ function bootstrap_dss_elc_process_node(&$vars) {
 
 }
 
-function bootstrap_dss_elc_preprocess_node(&$vars) {
+function bootstrap_dss_swift_preprocess_node(&$vars) {
 
   /**
    * Theming for loans
@@ -42,7 +42,7 @@ function bootstrap_dss_elc_preprocess_node(&$vars) {
    */
   if($vars['type'] == 'loan') {
 
-    drupal_add_css(drupal_get_path('theme', 'bootstrap_dss_elc') . '/css/node__loan.css');
+    drupal_add_css(drupal_get_path('theme', 'bootstrap_dss_swift') . '/css/node__loan.css');
 
     /*
     $vars['field_entries'] = array(
@@ -199,7 +199,7 @@ function bootstrap_dss_elc_preprocess_node(&$vars) {
     $meta_elements['meta_element_open_graph_image'] = array('#type' => 'html_tag',
 							    '#tag' => 'meta',
 							    '#attributes' => array('property' =>  'og:image',
-										   'content' => $base_url . '/' . drupal_get_path('theme', 'bootstrap_dss_elc') . '/files/dss_logo_full.png',
+										   'content' => $base_url . '/' . drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/dss_logo_full.png',
 										   ),
 							    );
     $meta_elements['meta_element_open_graph_site_name'] = array('#type' => 'html_tag',
@@ -257,7 +257,7 @@ function bootstrap_dss_elc_preprocess_node(&$vars) {
  * @griffinj
  *
  */
-function bootstrap_dss_elc_preprocess_hybridauth_widget(&$vars) {
+function bootstrap_dss_swift_preprocess_hybridauth_widget(&$vars) {
 
   // Refactor
   $i = 0;
@@ -268,7 +268,7 @@ function bootstrap_dss_elc_preprocess_hybridauth_widget(&$vars) {
   }
 }
 
-function _bootstrap_dss_elc_user_logout($account) {
+function _bootstrap_dss_swift_user_logout($account) {
 
   if (variable_get('user_pictures', 0)) {
     
@@ -329,7 +329,7 @@ function _bootstrap_dss_elc_user_logout($account) {
  * @see page.tpl.php
  */
 
-function bootstrap_dss_elc_preprocess_page(&$variables) {
+function bootstrap_dss_swift_preprocess_page(&$variables) {
 
   // Add information about the number of sidebars.
   if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
@@ -405,13 +405,13 @@ function bootstrap_dss_elc_preprocess_page(&$variables) {
   if($is_smartphone_browser) {
     //if(TRUE) {
 
-    $variables['dss_logo_image'] = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_elc') . '/files/dss_logo_mobile.png',
+    $variables['dss_logo_image'] = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/dss_logo_mobile.png',
 						     'alt' => t('digital scholarship services logo'),
 						     'attributes' => array()));
   } else {
 
     // Work-around for the logo image
-    $variables['dss_logo_image'] = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_elc') . '/files/dss_logo.png',
+    $variables['dss_logo_image'] = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/dss_logo.png',
 						     'alt' => t('digital scholarship services logo'),
 						     'attributes' => array()));
   }
@@ -435,7 +435,7 @@ function bootstrap_dss_elc_preprocess_page(&$variables) {
    * @todo Re-integrate for cases requiring Facebook and Twitter authentication
    *
    */
-  //  $variables['auth_anchor'] = '<a data-toggle="lafayette-dss-modal" data-target="#auth-modal" data-width-offset="0px" data-height-offset="30px"><div class="auth-icon navbar-icon"><img src="/sites/all/themes/bootstrap_dss_elc/files/UserIcon.png" /><span>Log In</span></div></a>';
+  //  $variables['auth_anchor'] = '<a data-toggle="lafayette-dss-modal" data-target="#auth-modal" data-width-offset="0px" data-height-offset="30px"><div class="auth-icon navbar-icon"><img src="/sites/all/themes/bootstrap_dss_swift/files/UserIcon.png" /><span>Log In</span></div></a>';
   global $base_url;
 
   /**
@@ -445,7 +445,7 @@ function bootstrap_dss_elc_preprocess_page(&$variables) {
    */
   $GET_params = $_SERVER['QUERY_STRING'];
 
-  $variables['auth_anchor'] = l('<div class="auth-icon navbar-icon"><img src="/sites/all/themes/bootstrap_dss_elc/files/UserIcon.png" /><span>Log In</span></div>',
+  $variables['auth_anchor'] = l('<div class="auth-icon navbar-icon"><img src="/sites/all/themes/bootstrap_dss_swift/files/UserIcon.png" /><span>Log In</span></div>',
 				'cas',
 				array('html' => TRUE,
 				      'https' => true,
@@ -480,7 +480,7 @@ function bootstrap_dss_elc_preprocess_page(&$variables) {
 						       ));
   */
 
-  $variables['share_anchor'] = '<a data-toggle="lafayette-dss-modal" data-target="#share-modal" data-width-offset="10px" data-height-offset="28px"><div class="share-icon navbar-icon"><img src="/sites/all/themes/bootstrap_dss_elc/files/ShareIcon.png" /><span>Share</span></div></a>';
+  $variables['share_anchor'] = '<a data-toggle="lafayette-dss-modal" data-target="#share-modal" data-width-offset="10px" data-height-offset="28px"><div class="share-icon navbar-icon"><img src="/sites/all/themes/bootstrap_dss_swift/files/ShareIcon.png" /><span>Share</span></div></a>';
 
   // Render thumbnails for authenticated users
   $variables['user_picture'] = '<span class="button-auth-icon"></span>';
@@ -492,7 +492,7 @@ function bootstrap_dss_elc_preprocess_page(&$variables) {
 
     //$user_view = user_view($user);
     //$variables['user_picture'] = drupal_render($user_view['user_picture']);
-    $variables['user_picture'] = _bootstrap_dss_elc_user_logout($user);
+    $variables['user_picture'] = _bootstrap_dss_swift_user_logout($user);
   }
 
   /**
@@ -501,7 +501,7 @@ function bootstrap_dss_elc_preprocess_page(&$variables) {
    */
   // A search button must be passed if this is being viewed with a mobile browser
 
-  $search_icon = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_elc') . '/files/SearchIcon.png',
+  $search_icon = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/SearchIcon.png',
 				   'alt' => t('search the site'),
 				   'attributes' => array()));
 
@@ -543,7 +543,7 @@ function bootstrap_dss_elc_preprocess_page(&$variables) {
 
   $variables['share_container'] = $share_container;
 
-  $menu_toggle_image = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_elc') . '/files/MenuIcon.png',
+  $menu_toggle_image = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/MenuIcon.png',
 					 'alt' => t('mobile menu'),
 					 'attributes' => array()));
 
@@ -574,7 +574,7 @@ function bootstrap_dss_elc_preprocess_page(&$variables) {
  * Implements template_preprocess_html
  *
  */
-function bootstrap_dss_elc_preprocess_html(&$variables) {
+function bootstrap_dss_swift_preprocess_html(&$variables) {
 
   drupal_add_library('system', 'effects.drop');
   drupal_add_library('system', 'effects.slide');
@@ -585,7 +585,7 @@ function bootstrap_dss_elc_preprocess_html(&$variables) {
  * See https://drupal.org/comment/4573218#comment-4573218
  *
  */
-function bootstrap_dss_elc_process_page(&$variables) {
+function bootstrap_dss_swift_process_page(&$variables) {
 
   if(array_key_exists('search_form', $variables['page']['content']['system_main'])) {
 
@@ -619,13 +619,13 @@ function template_preprocess_hybridauth_widget(&$vars, $hook) {
  */
 
 /*
-function bootstrap_dss_elc_object_access_callback($perm, $object = NULL) {
+function bootstrap_dss_swift_object_access_callback($perm, $object = NULL) {
 
   return TRUE;
 }
 */
 
-function bootstrap_dss_elc_theme_registry_alter(&$registry) {
+function bootstrap_dss_swift_theme_registry_alter(&$registry) {
 
   $registry['hybridauth_widget']['file'] = 'template';
 }
@@ -638,13 +638,13 @@ function bootstrap_dss_elc_theme_registry_alter(&$registry) {
  * This assumes a subnet of 139.147.0.0/16 for Lafayette College servers
  * This assumes a subnet of 192.168.101.0/24 for the VPN
  */
-function bootstrap_dss_elc_net_match($CIDR, $IP) {
+function bootstrap_dss_swift_net_match($CIDR, $IP) {
 
   list($net, $mask) = explode('/', $CIDR);
   return ( ip2long ($IP) & ~((1 << (32 - $mask)) - 1) ) == ip2long ($net);
 }
 
-function bootstrap_dss_elc_preprocess_islandora_large_image(array &$variables) {
+function bootstrap_dss_swift_preprocess_islandora_large_image(array &$variables) {
 
   /**
    * Work-around given the issues for hook_menu_alter() and hook_preprocess_HOOK() implementations
@@ -778,14 +778,14 @@ function bootstrap_dss_elc_preprocess_islandora_large_image(array &$variables) {
 						   'href' =>  $path_alias);
 }
 
-//module_load_include('inc', 'bootstrap_dss_elc', 'includes/dssMods');
+//module_load_include('inc', 'bootstrap_dss_swift', 'includes/dssMods');
 
-function bootstrap_dss_elc_preprocess_islandora_book_book(array &$variables) {
+function bootstrap_dss_swift_preprocess_islandora_book_book(array &$variables) {
 
   $object = $variables['object'];
 }
 
-function bootstrap_dss_elc_preprocess_islandora_book_page(array &$variables) {
+function bootstrap_dss_swift_preprocess_islandora_book_page(array &$variables) {
 
   try {
 
@@ -799,7 +799,7 @@ function bootstrap_dss_elc_preprocess_islandora_book_page(array &$variables) {
   
 }
 
-function bootstrap_dss_elc_preprocess_islandora_book_pages(array &$variables) {
+function bootstrap_dss_swift_preprocess_islandora_book_pages(array &$variables) {
 
   // View Links.
   $display = (empty($_GET['display'])) ? 'grid' : $_GET['display'];

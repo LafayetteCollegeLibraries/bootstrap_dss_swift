@@ -6,7 +6,7 @@
    *
    */
 
-function bootstrap_dss_elc_form_islandora_dss_solr_advanced_search_form_alter(&$form, $form_state, $form_id) {
+function bootstrap_dss_swift_form_islandora_dss_solr_advanced_search_form_alter(&$form, $form_state, $form_id) {
 
   foreach($form['terms'] as $key => &$term) {
 
@@ -24,7 +24,7 @@ function bootstrap_dss_elc_form_islandora_dss_solr_advanced_search_form_alter(&$
  * Theming for the advanced search form must be implemented using a hook which does not conflict with the actual form implementation within the global context
  *
  */
-function bootstrap_dss_elc_form_alter(&$form, $form_state, $form_id) {
+function bootstrap_dss_swift_form_alter(&$form, $form_state, $form_id) {
 
   switch($form_id) {
 
@@ -82,7 +82,7 @@ function bootstrap_dss_elc_form_alter(&$form, $form_state, $form_id) {
  */
 
 /*
-function bootstrap_dss_elc_preprocess_islandora_dss_solr_advanced_search_form(&$variables) {
+function bootstrap_dss_swift_preprocess_islandora_dss_solr_advanced_search_form(&$variables) {
 
 }
 */
