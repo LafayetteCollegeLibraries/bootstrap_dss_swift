@@ -3014,9 +3014,8 @@ table.dataTable thead th, table.dataTable thead td {
 /* by Thom: background on ELC header */
 
 .navbar-header {
-	
-	background-image: url("../files/ELC_Banner.jpg"), url("../files/ELCrepeatingtile.jpg");
-	background-repeat:no-repeat, repeat;
+
+    background-repeat:no-repeat, repeat;
 }
 
 /* by Thom: fix height above header banner when logged in through drupal */

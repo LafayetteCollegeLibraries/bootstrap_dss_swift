@@ -6,7 +6,7 @@
    <h2><?php print l('Skillman Library', 'http://library.lafayette.edu/'); ?> at <?php print l('Lafayette College', 'http://www.lafayette.edu/'); ?></h2>
 
    <?php if(!empty($title)): ?>
-      <h1><?php print l('Easton Library Company Database', '', array('absolute' => TRUE)); ?></h1>
+      <h1><?php print l('Swift Poems Project', '', array('absolute' => TRUE)); ?></h1>
    <?php endif; ?>
   </div>
 
