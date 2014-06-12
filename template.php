@@ -5,161 +5,10 @@
  * @author griffinj@lafayette.edu
  * This file contains the primary theme hooks found within any given Drupal 7.x theme
  * 
- * @todo Implement some Drupal theming hooks
  */
-
-  // Includes functions to create Islandora Solr blocks.
-
-  /*
-require_once dirname(__FILE__) . '/includes/blocks.inc';
-require_once dirname(__FILE__) . '/includes/forms.inc';
-require_once dirname(__FILE__) . '/includes/menus.inc';
-require_once dirname(__FILE__) . '/includes/dss_mods.inc';
-require_once dirname(__FILE__) . '/includes/dss_dc.inc';
-require_once dirname(__FILE__) . '/includes/pager.inc';
-require_once dirname(__FILE__) . '/includes/apachesolr.inc';
-require_once dirname(__FILE__) . '/includes/islandora_solr.inc';
-require_once dirname(__FILE__) . '/includes/islandora_basic_collection.inc';
-  */
-
 require_once dirname(__FILE__) . '/includes/breadcrumb.inc';
 
-function bootstrap_dss_swift_process_node(&$vars) {
-
-  if($vars['type'] == 'loan') {
-
-    /*
-    hide($vars['content']['field_loan_ledger']);
-    hide($vars['content']['field_loan_volumes_loaned']);
-    hide($vars['content']['field_loan_issues_loaned']);
-    */
-  }
-
-}
-
 function bootstrap_dss_swift_preprocess_node(&$vars) {
-
-  /**
-   * Theming for loans
-   *
-   */
-  if($vars['type'] == 'loan') {
-
-    drupal_add_css(drupal_get_path('theme', 'bootstrap_dss_swift') . '/css/node__loan.css');
-
-    /*
-    $vars['field_entries'] = array(
-				   t('Shareholder:') => 'field_loan_shareholder',
-				   t('Representative:') => 'field_loan_representative',
-				   );
-    */
-
-    /**
-     * For rendering the type of item loaned
-     * Need to retrieve the individual Book/Periodical/Item Entity in order to retrieve the actual type
-     *
-     */
-    $bib_rel_object_entity = $vars['field_bib_rel_object'][0]['entity'];
-    $vars['bib_rel_object_type'] = $bib_rel_object_entity->type;
-
-    /**
-     * For rendering the loan duration separately
-     *
-     */
-    $loan_duration_checkout = $vars['field_loan_duration'][0]['value'];
-    $vars['loan_duration_checkout'] = date('Y-m-d', $loan_duration_checkout);
-
-    $loan_duration_returned = $vars['field_loan_duration'][0]['value2'];
-    $vars['loan_duration_returned'] = date('Y-m-d', $loan_duration_returned);
-    hide($vars['content']['field_loan_duration']);
-
-    /**
-     * Generates the link to the Islandora Page Object
-     * Parses the filename structure in order to construct the Fedora Commons PID: ELCv2_C2_082 -> ELCv2:C2_082
-     *
-     */
-    $filename_term = $vars['field_loan_filename'][0]['taxonomy_term'];
-
-    /**
-     * Resolves EDDC-221
-     * @todo Fully generate the path aliases for all newly migrated Page Objects
-     */
-    if($filename_term->name == 'ELCv2_C1_136') {
-
-      $vars['islandora_object_link'] = l(t('View Ledger Image'), 'ledger/2/' . $filename_term->name);
-    } else {
-
-      preg_match('/(.+?)_(.+)/', $filename_term->name, $m); 
-      $islandora_pid = $m[1] . ':' . $m[2];
-
-      $vars['islandora_object_link'] = l(t('View Ledger Image'), 'islandora/object/' . $islandora_pid);
-    }
-    hide($vars['content']['field_loan_filename']);
-
-    hide($vars['content']['field_loan_ledger']);
-    hide($vars['content']['field_loan_volumes_text']);
-    hide($vars['content']['field_loan_issues_text']);
-    hide($vars['content']['body']);
-  } else if($vars['type'] == 'human') {
-
-    /**
-     * Hide fields for the node
-     *
-     */
-    hide($vars['content']['field_human_surname']);
-    hide($vars['content']['field_person_location']);
-    hide($vars['content']['field_human_middle_initials']);
-    hide($vars['content']['field_pers_rel_object']);
-    hide($vars['content']['field_pers_rel_role']);
-
-    /**
-     * Embed an actual view for the human
-     */
-
-    /** (Ensure that this is only rendered for Pages and not Teaser Views) */
-    $loans_view = '';
-    if(!$vars['teaser']) {
-
-      $loans_view = views_embed_view('loans_by_human', 'default', $vars['nid']);
-    }
-    $vars['loans_view'] = $loans_view;
-
-  } else if($vars['type'] == 'book'
-	    or $vars['type'] == 'periodical'
-	    or $vars['type'] == 'item'
-	    ) {
-
-    /**
-     * Embed an actual view for the human
-     */
-
-    /** (Ensure that this is only rendered for Pages and not Teaser Views) */
-    $loans_view = '';
-    if(!$vars['teaser']) {
-
-      // Retrieve the Manifestation Node for the Item Node
-      // Loosely based upon the FRBR data model
-      $manifestation_nid = '';
-
-      /**
-       * @todo Create an appropriate field and store this relationship
-       */
-      $drupalQuery = new EntityFieldQuery();
-      $result = $drupalQuery->entityCondition('entity_type', 'node')
-	->entityCondition('bundle', 'manifestation')
-	->fieldCondition('field_artifact_title', 'value', $vars['field_artifact_title'][0]['value'])
-	->execute();
-
-      if(isset($result['node'])) {
-	  
-	//$bib_entities = array_merge(entity_load('node', array_keys($result['node'])));
-	$manifestation_nid = array_shift(array_keys($result['node']));
-      }
-
-      $loans_view = views_embed_view('loans_by_item', 'default', $manifestation_nid);
-    }
-    $vars['loans_view'] = $loans_view;
-  }
 
   if($vars['page']) {
 
@@ -219,56 +68,6 @@ function bootstrap_dss_swift_preprocess_node(&$vars) {
     }
   }
 
-  /**
-   * Implements redirection for the Repository Migration page
-   * @todo Refactor
-   * Resolves DSSSM-826
-   */
-  if($vars['node_url'] == '/redirect') {
-
-    drupal_add_js('jQuery(document).ready(function() { setTimeout(function() { window.location.replace("/"); }, 5000); });',
-		  array('type' => 'inline', 'scope' => 'footer', 'weight' => 5)
-		  );
-  }
-
-  /**
-   * Implemented in response to there being no clear means by which to decode the HTML character entity references within the Drupal stack
-   * EDDC-184
-   * @todo Refactor
-   */
-
-  if($vars['type'] == 'loan'
-     or $vars['type'] == 'manifestation'
-     or $vars['type'] == 'item'
-     or $vars['type'] == 'book'
-     or $vars['type'] == 'periodical') {
-
-    $title = $vars['title'];
-
-    $title = preg_replace('/&amp;amp;/', '&', $title);
-    $title = preg_replace('/&amp;/', '&', $title);
-    $title = preg_replace('/&#039;/', "'", $title);
-    $title = preg_replace('/&quot;/', "'", $title);
-
-    $vars['title'] = $title;
-    drupal_set_title($title);
-  }
-}
-
-/**
- * Implements template_preprocess_hybridauth_widget
- * @griffinj
- *
- */
-function bootstrap_dss_swift_preprocess_hybridauth_widget(&$vars) {
-
-  // Refactor
-  $i = 0;
-  foreach (hybridauth_get_enabled_providers() as $provider_id => $provider_name) {
-
-    //$vars['providers'][$i] = preg_replace('/(<\/span>)/', "</span><span>&nbsp;$provider_name</span>", $vars['providers'][$i]);
-    $i++;
-  }
 }
 
 function _bootstrap_dss_swift_user_logout($account) {
@@ -400,13 +199,9 @@ function bootstrap_dss_swift_preprocess_page(&$variables) {
 								'external' => TRUE));
   }
 
-
-
   // Different images must be passed based upon the browser type
-
   // Shouldn't be parsing the string itself; refactor
   if($is_smartphone_browser) {
-    //if(TRUE) {
 
     $variables['dss_logo_image'] = theme_image(array('path' => drupal_get_path('theme', 'bootstrap_dss_swift') . '/files/dss_logo_mobile.png',
 						     'alt' => t('digital scholarship services logo'),
@@ -419,26 +214,6 @@ function bootstrap_dss_swift_preprocess_page(&$variables) {
 						     'attributes' => array()));
   }
 
-  // The "Log In" link
-  //$variables['auth_anchor'] = l(t('Log In'), '', array('attributes' => array('data-toggle' => 'lafayette-dss-modal',
-  /*
-  $variables['auth_anchor'] = l('<div class="auth-icon"><img src="/sites/all/themes/bootstrap_lafayette_lib_dss/files/UserIcon.png" /><span>Log In</span></div>', '', array('attributes' => array('data-toggle' => 'lafayette-dss-modal',
-														    'data-target' => '#auth-modal',
-																								  'data-width-offset' => '10px',
-														    'data-height-offset' => '28px'),
-											      'fragment' => ' ',
-											      //'external' => TRUE));
-											      'external' => TRUE,
-											      'html' => TRUE
-											      ));
-  */
-
-  /**
-   * Disabled for the initial release of the site
-   * @todo Re-integrate for cases requiring Facebook and Twitter authentication
-   *
-   */
-  //  $variables['auth_anchor'] = '<a data-toggle="lafayette-dss-modal" data-target="#auth-modal" data-width-offset="0px" data-height-offset="30px"><div class="auth-icon navbar-icon"><img src="/sites/all/themes/bootstrap_dss_swift/files/UserIcon.png" /><span>Log In</span></div></a>';
   global $base_url;
 
   /**
@@ -468,21 +243,6 @@ function bootstrap_dss_swift_preprocess_page(&$variables) {
     $variables['logout_anchor'] = l(t('Log Out'), 'user/logout');
   }
 
-  // The "Share" link
-  //$variables['share_anchor'] = l(t('Share'), '', array('attributes' => array('data-toggle' => 'lafayette-dss-modal',
-  /*
-  $variables['share_anchor'] = l('<div class="share-icon"><img src="/sites/all/themes/bootstrap_lafayette_lib_dss/files/ShareIcon.png" /><span>Share</span></div>', '', array('attributes' => array('data-toggle' => 'lafayette-dss-modal',
-									     'data-target' => '#share-modal',
-																								    'data-width-offset' => '10px',
-									     'data-height-offset' => '28px'
-									     ),
-						       'fragment' => ' ',
-						       //'external' => TRUE));
-						       'external' => TRUE,
-						       'html' => TRUE
-						       ));
-  */
-
   $variables['share_anchor'] = '<a data-toggle="lafayette-dss-modal" data-target="#share-modal" data-width-offset="10px" data-height-offset="28px"><div class="share-icon navbar-icon"><img src="/sites/all/themes/bootstrap_dss_swift/files/ShareIcon.png" /><span>Share</span></div></a>';
 
   // Render thumbnails for authenticated users
@@ -493,8 +253,6 @@ function bootstrap_dss_swift_preprocess_page(&$variables) {
     // For the user thumbnail
     global $user;
 
-    //$user_view = user_view($user);
-    //$variables['user_picture'] = drupal_render($user_view['user_picture']);
     $variables['user_picture'] = _bootstrap_dss_swift_user_logout($user);
   }
 
