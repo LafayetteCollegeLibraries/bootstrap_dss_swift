@@ -428,7 +428,7 @@ header#page-header {
 #islandora-solr-top,
 .islandora-solr-content {
 
-    background-color: #ffffff;
+    background-color: #E4E4E4;
     padding: 8px;
 }
 
@@ -739,4 +739,65 @@ input, textarea, .uneditable-input {
 
     font-size: 16px;
     margin-left: 12px;
+}
+
+
+
+/* by Thom: style basic color theming */
+
+html, .navbar-header {
+	
+	background-color: #385D78;
+}
+
+#page-header a {
+	
+	color: #034E85;
+}
+
+#navbar.navbar div.navbar-header a {
+	
+	color: #399ED5;
+}
+
+#navbar.navbar div.navbar-header h2, #navbar.navbar div.navbar-header h1 {
+	
+	color:#C1C1C1;
+}
+
+body > div, .footer.container {
+	
+	background-color: #8899A9;
+}
+
+.swift-nb-container.container pre, .swift-tei-html, .swift-tei-code-container, .swift-tei-code-container code, .islandora-basic-collection-wrapper, .islandora-basic-collection-grid, .pagination.pagination-centered {
+	
+	background-color: #E4E4E4;
+}
+
+.islandora-basic-collection-wrapper {
+	
+	border-radius: 4px;
+}
+
+.swift-tei-code-container code, .islandora-basic-collection-grid {
+	
+	border: 1px solid #E4E4E4;
+	color: #000000;
+}
+
+.islandora-basic-collection a {
+	
+	color: #399ED5;
+}
+
+.pagination ul > li > a:hover, .pagination ul > li > a:focus, .pagination ul > .active > a, .pagination ul > .active > span {
+	
+	background-color: #C8C8C8 !important;
+	color:#545454 !important;
+}
+
+.pagination ul > li > a, .pagination ul > li > span {
+	
+	border-color:#B4B4B4 !important;
 }

@@ -1064,17 +1064,24 @@ dd.solr-value {
 .islandora img {
 	
 	max-width:100%;
-	border:1px solid #DDDDDD;
+	/*
+	 * disabled by thom for SPP
+	 * 
+	 * border:1px solid #DDDDDD; */
 	border-radius:3px !important;
 }
 
-.islandora-basic-collection-grid {
+/*
+ * 
+ * disabled for spp by Thom
+ * 
+ * .islandora-basic-collection-grid {
 	
 	font-size:0px;
 	background-color:#F5F5F5;
 	border-radius:2px;
 	border: 1px solid #AAAAAA;
-}
+}*/
 
 .islandora-solr-search-results {
 	
@@ -3032,10 +3039,10 @@ body.toolbar-drawer, body.toolbar {
 	padding-bottom:0px;
 }
 
-body > div {
+/* body > div {
 	
 	background-color:#DBD2C1;
-}
+} */
 
 .navbar {
 	
@@ -3049,7 +3056,7 @@ body > div {
 
 .footer.container {
 	
-	background-color:#DBD2C1;
+	/* background-color:#DBD2C1; */
 	margin-top:0px;
 }
 
