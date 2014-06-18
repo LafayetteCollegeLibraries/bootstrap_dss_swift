@@ -3072,13 +3072,6 @@ body.toolbar-drawer, body.toolbar {
 	display:none;
 }
 
-/* by Thom: hide search control for now to restrict widget access */
-
-#advanced-search-modal {
-	
-	display:none !important;
-}
-
 /* by Thom: style inputs on contact form */
 
 #edit-submitted-your-name, #edit-submitted-your-e-mail-address, #edit-submitted-subject {
