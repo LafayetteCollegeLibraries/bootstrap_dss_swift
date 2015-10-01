@@ -1,7 +1,7 @@
 name = The Swift Poems Project Theme
 description = The Lafayette College Libraries Swift Poems Project Bootstrap Theme
 core = 7.x
-base theme = bootstrap_lafayette_lib_dss
+base theme = bootstrap_dss_digital
 
 ; Regions
 regions[navigation]     = 'Navigation'

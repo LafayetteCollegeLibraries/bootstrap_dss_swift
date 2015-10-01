@@ -6,7 +6,7 @@
    *
    */
 
-define('BOOTSTRAP_DSS_DIGITAL_BREADCRUMBS_MAX', 52);
+define('BOOTSTRAP_DSS_SWIFT_BREADCRUMBS_MAX', 52);
 
 /**
  * Builds an array of drupal links for use in breadcrumbs.
